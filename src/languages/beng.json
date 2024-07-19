@@ -1,0 +1,617 @@
+{
+    "loginRedirection": "অনুগ্রহ করে অপেক্ষা করুন...",
+    "companyDetails": {
+        "companyName": "Priority Solutions",
+        "description": "একটি পেট্রোল পাম্প অ্যাকাউন্টিং এবং ইনভেন্টরি ম্যানেজমেন্ট সফ্টওয়্যার RPDA এর নির্দেশনায় তৈরি করা হয়েছে",
+        "estd": "2024"
+    },
+    "welcomeTo": "স্বাগতম",
+    "rightsReserved": "সমস্ত অধিকার সংরক্ষিত",
+    "copyrightBy": "কপিরাইট",
+    "signUptext": {
+        "msg": "এখনো কোনো একাউন্ট নেই?",
+        "signUp": "নিবন্ধন করুন!"
+    },
+    "loginText": {
+        "msg": "আপনি গ্রাহক হলে, এখানে ক্লিক করুন",
+        "customerLogin": "গ্রাহক লগইন!",
+        "login": "লগইন"
+    },
+    "label": {
+        "email": "ইমেইল",
+        "password": "পাসওয়ার্ড",
+        "addItemMaster": {
+            "itemName": "আইটেম নাম",
+            "itemShortName": "আইটেম সংক্ষিপ্ত নাম",
+            "itemType": "খবর ধরন",
+            "unitValue": "একক মূল্য",
+            "unit": "ইউনিট",
+            "cst": "সিএসটি",
+            "sgst": "এসজিএসটি",
+            "igst": "আইজিএসটি",
+            "basicSaleRate": "মৌলিক বিক্রয় হার",
+            "rememberQnty": "পরিমাণ মনে রাখবেন",
+            "openingQnty": "খোলার পরিমাণ",
+            "openingRate": "খোলার হার"
+        },
+        "addPumpMaster": {
+            "pumpName": "পাম্পের নাম",
+            "nozzleNumber": "অগ্রভাগের সংখ্যা",
+            "nozzleName": "অগ্রভাগের নাম",
+            "selectTank": "ট্যাঙ্ক নির্বাচন করুন"
+        },
+        "tankMaster": {
+            "tankName": "ট্যাঙ্কের নাম",
+            "product": "পণ্য",
+            "tankDiameter": "ট্যাঙ্কের ব্যাস (সেমিতে)",
+            "tankLength": "ট্যাঙ্কের দৈর্ঘ্য (সেমিতে)",
+            "maxVolume": "সর্বোচ্চ ভলিউম"
+        },
+        "addShiftMaster": {
+            "shiftName": "শিফটের নাম",
+            "startTime": "সময় শুরু",
+            "endTime": "শেষ সময়"
+        },
+        "addAccountHead": {
+            "headName": "মাথার নাম",
+            "headCode": "হেড কোড",
+            "mainHead": "প্রধান প্রধান"
+        },
+        "accountLedger": {
+            "ledgerName": "খাতার নাম",
+            "ledgerCode": "লেজার কোড",
+            "accountHead": "হিসাব প্রধান",
+            "openingBalance": "খোলার ব্যালেন্স",
+            "openingDate": "খোলার তারিখ"
+        },
+        "addBankAccount": {
+            "bankName": "ব্যাংকের নাম",
+            "bankBranch": "ব্যাংকের শাখা",
+            "bankIfsc": "ব্যাংক আইএফএসসি",
+            "accountNo": "হিসাব নাম্বার",
+            "openingBalance": "খোলার ব্যালেন্স",
+            "underLedger": "খাতা অধীনে"
+        },
+        "cardPos": {
+            "posName": "Pos Name",
+            "posProvider": "Pos provider",
+            "posType": "Pos type",
+            "linkBank": "Link Bank",
+            "installationData": "Installation data"
+        },
+        "customer": {
+            "customerName": "Customer name",
+            "customerAddress": "Customer address",
+            "mobile": "Customer mobile",
+            "customerEmail": "Customer email",
+            "gstin": "Customer gstin",
+            "maxCredLimit": "Maximum credit limit",
+            "maxCredDays": "Maximum credit days",
+            "openingBalance": "Opening balance",
+            "underLedger": "Under ledger"
+        },
+        "supplier": {
+            "supplierName": "Supplier name",
+            "supplierAddress": "Supplier address",
+            "mobile": "Supplier mobile",
+            "supplierEmail": "Supplier email",
+            "gstin": "Supplier gstin",
+            "maxCredDays": "Maximum credit days",
+            "openingBalance": "Opening balance",
+            "underLedger": "Under ledger"
+        },
+        "tanker": {
+            "tankerName": "Tanker name",
+            "vehicleName": "Vehicle name",
+            "vehicleNumber": "Vehicle number",
+            "capacity": "Capacity"
+        },
+        "addStaffMaster": {
+            "staffName": "Staff name",
+            "staffAddress": "Staff address",
+            "mobile": "Staff mobile",
+            "staffEmail": "Staff mobile",
+            "staffType": "Staff type",
+            "designation": "Staff designation",
+            "joiningDate": "Staff joining date",
+            "basic": "Staff basic",
+            "da": "Staff DA",
+            "hra": "Staff HRA",
+            "ta": "Staff TA",
+            "misc": "Staff misc.",
+            "pf": "Staff PF"
+        },
+        "rateMaster": {
+            "item": "Item",
+            "itemRate": "Item rate",
+            "rateDate": "Rate date"
+        },
+        "addMeterOpening": {
+            "pump": "Pump",
+            "nozzle": "Nozzle",
+            "openingReading": "Opening reading",
+            "openingDate": "Opening date"
+        },
+        "addInfo": {
+            "itemQuantity": "Item quantity",
+            "itemRate": "Item rate"
+        },
+        "meterReading": {
+            "itemName": "Item name",
+            "openingReading": "Opening reading",
+            "closingReading": "Closing reading",
+            "testingNumber": "Testing number",
+            "creditQuantity": "Credit quantity",
+            "itemRate": "Item rate",
+            "readDate": "Reading date",
+            "transactionDetails":"Transaction details",
+            "transactionBanking":{
+                "amount":"Amount",
+                "cardPos":"Card/Pos"
+            },
+            "transactionCash":{
+                "denominator":"Denominator"
+            }
+        }
+    },
+    "placeholders": {
+        "email": "আপনার ইমেল লিখুন",
+        "password": "আপনার পাসওয়ার্ড লিখুন",
+        "search": "অনুসন্ধান করুন",
+        "addUnitMaster": "ইউনিট মাস্টার লিখুন",
+        "addItemMaster": {
+            "itemName": "আইটেম নাম লিখুন",
+            "itemShortName": "আইটেম সংক্ষিপ্ত নাম লিখুন",
+            "itemType": "আইটেম টাইপ নির্বাচন করুন",
+            "unitValue": "ইউনিট মান লিখুন",
+            "unit": "ইউনিট নির্বাচন করুন",
+            "cst": "CST লিখুন",
+            "sgst": "SGST লিখুন",
+            "igst": "IGST লিখুন",
+            "basicSaleRate": "বেসিক সেল রেট লিখুন",
+            "rememberQnty": "মনে রাখার পরিমাণ লিখুন",
+            "openingQnty": "খোলার পরিমাণ লিখুন",
+            "openingRate": "খোলার হার লিখুন"
+        },
+        "addPumpMaster": {
+            "pumpName": "পাম্পের নাম লিখুন",
+            "nozzleNumber": "অগ্রভাগের সংখ্যা লিখুন",
+            "nozzleName": "অগ্রভাগের নাম লিখুন",
+            "selectTank": "ট্যাঙ্ক নির্বাচন করুন"
+        },
+        "tankMaster": {
+            "tankName": "ট্যাঙ্কের নাম লিখুন",
+            "product": "পণ্য লিখুন",
+            "tankDiameter": "ট্যাঙ্কের ব্যাস লিখুন (সেমিতে)",
+            "tankLength": "ট্যাঙ্কের দৈর্ঘ্য লিখুন (সেমিতে)",
+            "maxVolume": "সর্বোচ্চ ভলিউম লিখুন"
+        },
+        "addShiftMaster": {
+            "shiftName": "শিফটের নাম লিখুন",
+            "startTime": "শুরুর সময় লিখুন",
+            "endTime": "শেষ সময় লিখুন"
+        },
+        "addAccountHead": {
+            "headName": "মাথার নাম লিখুন",
+            "headCode": "হেড কোড লিখুন"
+        },
+        "accountLedger": {
+            "ledgerName": "খাতার নাম লিখুন",
+            "ledgerCode": "লেজার কোড লিখুন",
+            "openingBalance": "খোলার ব্যালেন্স লিখুন"
+        },
+        "cardPos": {
+            "posName": "Enter pos name",
+            "posProvider": "Enter pos provider"
+        },
+        "customer": {
+            "customerName": "Enter customer name",
+            "customerAddress": "Enter customer address",
+            "mobile": "Enter customer mobile number",
+            "customerEmail": "Enter customer email",
+            "gstin": "Enter GSTIN",
+            "maxCredLimit": "Enter max credit limit",
+            "maxCredDays": "Enter max credit days",
+            "openingBalance": "Enter opening balance"
+        },
+        "supplier": {
+            "supplierName": "Enter supplier name",
+            "supplierAddress": "Enter supplier address",
+            "mobile": "Enter supplier mobile number",
+            "supplierEmail": "Enter supplier email",
+            "gstin": "Enter GSTIN",
+            "maxCredDays": "Enter max credit days",
+            "openingBalance": "Enter opening balance"
+        },
+        "tanker": {
+            "tankerName": "Enter tanker name",
+            "vehicleName": "Enter vehicle name",
+            "vehicleNumber": "Enter vehicle number",
+            "capacity": "Enter capacity"
+        },
+        "addStaffMaster": {
+            "staffName": "Enter staff name",
+            "staffAddress": "Enter staff address",
+            "mobile": "Enter staff mobile",
+            "staffEmail": "Enter staff email",
+            "basic": "Enter staff basic",
+            "da": "Enter staff da",
+            "hra": "Enter staff hra",
+            "ta": "Enter staff ta",
+            "misc": "Enter staff misc.",
+            "pf": "Enter staff pf"
+        },
+        "rateMaster": {
+            "itemRate": "Enter item rate"
+        },
+        "addMeterOpening": {
+            "openingReading": "Enter opening date"
+        },
+        "addInfo": {
+            "itemQuantity": "Enter item quantity",
+            "itemRate": "Enter item rate"
+        },
+        "meterReading": {
+            "itemName": "Enter item name",
+            "openingReading": "Enter opening reading",
+            "closingReading": "Enter closing reading",
+            "testingNumber": "Enter testing number",
+            "creditQuantity": "Enter credit quantity",
+            "itemRate": "Enter item rate",
+            "transactionBanking":{
+                "amount":"Enter amount"
+            },
+            "transactionCash":{
+                "denominator":"Enter denominator"
+            }
+        }
+    },
+    "rememberMe": "আমাকে মনে কর",
+    "forgetPassword": "পাসওয়ার্ড ভুলে গেছেন?",
+    "signIn": "সাইন ইন করুন",
+    "support": "সমর্থন",
+    "phoneNumbers": {
+        "numberOne": "1234567890",
+        "numberTwo": "1234567890"
+    },
+    "whatsAppNumber": "1234567890",
+    "errors": {
+        "patternErrors": {
+            "email": "একটি বৈধ ইমেইল প্রবেশ করুন",
+            "password": "পাসওয়ার্ডে একটি বড় হাতের, ছোট হাতের, সংখ্যা, প্রতীক এবং ন্যূনতম 8টি অক্ষর থাকতে হবে",
+            "addItemMaster": {
+                "unitValue": "ইউনিট মাস্টারে শূন্যের চেয়ে বেশি সংখ্যা থাকতে হবে",
+                "cst": "CST-এ শূন্যের চেয়ে বড় একটি সংখ্যা থাকা উচিত",
+                "sgst": "SGST-এ শূন্যের চেয়ে বড় সংখ্যা থাকতে হবে",
+                "igst": "IGST-এ শূন্যের চেয়ে বড় সংখ্যা থাকা উচিত",
+                "basicSaleRate": "বেসিক সেল রেট শূন্যের থেকে বড় একটি সংখ্যা থাকা উচিত",
+                "rememberQnty": "মনে রাখবেন পরিমাণে শূন্যের চেয়ে বড় একটি সংখ্যা থাকা উচিত",
+                "openingQnty": "খোলার পরিমাণে শূন্যের চেয়ে বড় একটি সংখ্যা থাকা উচিত",
+                "openingRate": "খোলার হারে শূন্যের চেয়ে বড় সংখ্যা থাকা উচিত"
+            },
+            "addPumpMaster": {
+                "nozzleNumber": "অগ্রভাগের সংখ্যা শূন্যের বেশি হওয়া উচিত"
+            },
+            "tankMaster": {
+                "tankDiameter": "ট্যাঙ্কের ব্যাস শূন্যের চেয়ে বেশি হওয়া উচিত",
+                "tankLength": "ট্যাঙ্কের দৈর্ঘ্য শূন্যের চেয়ে বেশি হওয়া উচিত",
+                "maxVolume": "সর্বোচ্চ ভলিউম শূন্যের চেয়ে বেশি হওয়া উচিত"
+            },
+            "addAccountHead": {
+                "headCode": "হেড কোড শূন্যের চেয়ে বেশি হওয়া উচিত"
+            },
+            "shiftMaster": {
+                "invalidTime": "একটি বৈধ সময় লিখুন"
+            },
+            "accountLedger": {
+                "ledgerCode": "লেজার কোড শূন্যের চেয়ে বেশি হওয়া উচিত",
+                "openingBalance": "খোলার ব্যালেন্স শূন্যের চেয়ে বেশি হওয়া উচিত",
+                "invalidDate": "দয়া করে একটি বৈধ তারিখ লিখুন "
+            },
+            "bankAccount": {
+                "accountNo": {
+                    "positive": "একটি বৈধ নম্বর লিখুন",
+                    "notDecimal": "দশমিক মান অনুমোদিত নয়"
+                },
+                "openingBalance": "খোলার ব্যালেন্স শূন্যের বেশি হওয়া উচিত",
+                "invalidDate": "একটি বৈধ খোলার তারিখ লিখুন"
+            },
+            "customer": {
+                "email": "Please enter a valid email",
+                "maxCredLimit": "Max credit limit should be greater than zero",
+                "maxCredDays": "Max credit days should be greater than zero",
+                "openingBalance": "Opening balance should be greater than zero",
+                "mobileNo": "Please enter a valid mobile No"
+            },
+            "supplier": {
+                "email": "Please enter a valid email",
+                "maxCredLimit": "Max credit limit should be greater than zero",
+                "maxCredDays": "Max credit days should be greater than zero",
+                "openingBalance": "Opening balance should be greater than zero",
+                "mobileNo": "Please enter a valid mobile No"
+            },
+            "tanker": {
+                "capacity": "Capacity should be greater than zero"
+            },
+            "addStaffMaster": {
+                "staffEmail": "Please enter a valid email",
+                "basic": "Staff basic should be greater than zero",
+                "da": "Staff DA should be greater than zero",
+                "hra": "Staff HRA should be greater than zero",
+                "ta": "Staff TA should be greater than zero",
+                "misc": "Staff misc. should be greater than zero",
+                "pf": "Staff PF should be greater than zero",
+                "mobileNo": "Please enter a valid mobile no"
+            },
+            "rateMaster": {
+                "itemRate": "Item rate should be greater than zero",
+                "invalidDate": "Please select a valid date"
+            },
+            "meterOpening": {
+                "openingReading": "Opening reading should be greater than zero",
+                "invalidDate": "Please select a valid date"
+            },
+            "meterReading": {
+                "itemQuantity": "Item quantity should be greater than zero",
+                "itemRate": "Item quantity should be greater than zero",
+                "closingReading": { "moreThan":"Closing reading should be a greater than zero",
+                "lessThan":"Closing reading should be greater than opening reading"
+            },
+                "testingNumber": {
+                    "positive": "Testing number should be a positive number",
+                    "diffCheck": "Testing number cannot exceed the difference between opening and closing readings"
+                },
+                "creditQuantity": {
+                    "positive": "Credit quantity should be a positive number",
+                    "diffCheck": "Credit quantity cannot exceed the difference between closing and opening readings minus testing"
+                },
+                "transactionBanking":{
+                    "amount":"Amount must be a positive number"
+                }
+            }
+        },
+        "requiredErrors": {
+            "email": "দয়া করে আপনার ইমেল ঠিকানা দিন",
+            "password": "দয়া করে আপনার পাসওয়ার্ড দিন",
+            "unitMaster": "অনুগ্রহ করে ইউনিট লিখুন",
+            "itemCategory": "আইটেম বিভাগ লিখুন দয়া করে",
+            "addItemMaster": {
+                "itemName": "অনুগ্রহ করে আইটেমের নাম লিখুন",
+                "itemShortName": "অনুগ্রহ করে আইটেমের সংক্ষিপ্ত নাম লিখুন",
+                "itemType": "অনুগ্রহ করে আইটেমের প্রকার নির্বাচন করুন",
+                "unitValue": "অনুগ্রহ করে ইউনিট মান লিখুন",
+                "unit": "অনুগ্রহ করে ইউনিট নির্বাচন করুন",
+                "cst": "অনুগ্রহ করে CST লিখুন",
+                "sgst": "অনুগ্রহ করে SGST লিখুন",
+                "igst": "অনুগ্রহ করে IGST লিখুন",
+                "basicSaleRate": " অনুগ্রহ করে মৌলিক বিক্রয় হার লিখুন",
+                "rememberQnty": "অনুগ্রহ করে মনে রাখার পরিমাণ লিখুন",
+                "openingQnty": "অনুগ্রহ করে খোলার পরিমাণ লিখুন",
+                "openingRate": "অনুগ্রহ করে খোলার হার লিখুন",
+                "selectTank": "অনুগ্রহ করে ট্যাংক নির্বাচন করুন"
+            },
+            "addPumpMaster": {
+                "pumpName": "অনুগ্রহ করে পাম্পের নাম লিখুন",
+                "nozzleNumber": "অনুগ্রহ করে অগ্রভাগের সংখ্যা লিখুন",
+                "nozzleName": "অনুগ্রহ করে অগ্রভাগের নাম লিখুন"
+            },
+            "tankMaster": {
+                "tankName": "অনুগ্রহ করে ট্যাঙ্কের নাম লিখুন",
+                "product": "অনুগ্রহ করে পণ্য লিখুন",
+                "tankDiameter": "অনুগ্রহ করে ট্যাংক এর ব্যাস লিখুন",
+                "tankLength": "অনুগ্রহ করে ট্যাঙ্কের দৈর্ঘ্য লিখুন",
+                "maxVolume": "সর্বোচ্চ ভলিউম লিখুন দয়া করে"
+            },
+            "shiftMaster": {
+                "shiftName": "অনুগ্রহ করে শিফটের নাম লিখুন",
+                "startTime": "অনুগ্রহ করে শুরুর সময় লিখুন",
+                "endTime": "শেষ সময় লিখুন দয়া করে"
+            },
+            "addAccountHead": {
+                "headName": "অনুগ্রহ করে মাথার নাম লিখুন",
+                "headCode": "অনুগ্রহ করে হেড কোড লিখুন",
+                "mainHead": "অনুগ্রহ করে প্রধান প্রধান নির্বাচন করুন"
+            },
+            "accountLedger": {
+                "ledgerName": "অনুগ্রহ করে অ্যাকাউন্ট লেজারের নাম লিখুন",
+                "ledgerCode": "অনুগ্রহ করে লেজার কোড লিখুন",
+                "accountHead": "অনুগ্রহ করে একাউন্ট হেড লিখুন",
+                "openingBalance": "অনুগ্রহ করে খোলার ব্যালেন্স লিখুন"
+            },
+            "bankAccount": {
+                "bankName": "অনুগ্রহ করে ব্যাঙ্কের নাম লিখুন",
+                "bankBranch": "অনুগ্রহ করে ব্যাঙ্ক শাখা প্রবেশ করুন",
+                "bankIfSc": "অনুগ্রহ করে ব্যাঙ্কের আইএফএসসি কোড লিখুন",
+                "accountNo": "অনুগ্রহ করে ব্যাঙ্ক অ্যাকাউন্ট নম্বর লিখুন",
+                "underLedger": "অনুগ্রহ করে একটি আন্ডার লেজার নির্বাচন করুন",
+                "openingBalance": "অনুগ্রহ করে খোলার ব্যালেন্স লিখুন"
+            },
+            "cardPos": {
+                "posName": "Please enter pos name",
+                "posProvider": "Please enter pos provider",
+                "linkBank": "Please select bank"
+            },
+            "customer": {
+                "name": "Please enter customer name",
+                "address": "Please enter customer address",
+                "email": "Please enter customer email Id",
+                "maxCredLimit": "Please enter max credit limit",
+                "maxCredDays": "Please enter max credit days",
+                "openingBalance": "Please enter openning balance",
+                "underLedger": "Please select an underledger"
+            },
+            "supplier": {
+                "name": "Please enter supplier name",
+                "address": "Please enter supplier address",
+                "email": "Please enter supplier email Id",
+                "maxCredDays": "Please enter max credit days",
+                "openingBalance": "Please enter openning balance",
+                "underLedger": "Please select an underledger",
+                "gstin": "Please enter gstIn"
+            },
+            "tanker": {
+                "tankerName": "Please enter tanker name",
+                "vehicleName": "Please enter vehicle name",
+                "vehicleNumber": "Please enter vehicle number",
+                "capacity": "Please enter capacity"
+            },
+            "addStaffMaster": {
+                "staffName": "Please enter staff name",
+                "staffAddress": "Please enter staff address",
+                "staffEmail": "Please enter staff email",
+                "staffType": "Please select staff type",
+                "designation": "Please  select staff designation",
+                "basic": "Please enter staff basic",
+                "da": "Please enter staff DA",
+                "hra": "Please enter staff HRA",
+                "ta": "Please enter staff TA",
+                "misc": "Please enter staff misc.",
+                "pf": "Please enter staff PF"
+            },
+            "rateMaster": {
+                "item": "Please select item",
+                "itemRate": "Please enter item rate"
+            },
+            "meterOpening": {
+                "pump": "Please select a pump",
+                "nozzle": "Please select a nozzle",
+                "openingReading": "Please enter a meter opening"
+            },
+            "meterReading": {
+                "shiftName": "Please select staff name",
+                "pumpName": "Please select pump name",
+                "nozzleName": "Please select nozzle name",
+                "staffName": "Please select staffName",
+                "itemName": "Please select item name",
+                "itemQuantity": "Please enter item quantity",
+                "itemRate": "Please enter item rate",
+                "closingReading": "Please enter closing reading",
+                "testingNumber": "Please enter testing number",
+                "creditQuantity": "Please neter credit quantity",
+                "transactionBanking":{
+                    "amount":"Please enter amount",
+                    "cardPos":"Please select card/Pos"
+                }
+            }
+        }
+    },
+    "sideBarTexts": {
+        "dashboard": "ড্যাশবোর্ড",
+        "pump": "পাম্প",
+        "accounts": "হিসাব",
+        "hr": "মানব সম্পদ",
+        "reports": "রিপোর্ট",
+        "utility": "ইউটিলিটি",
+        "register": "নিবন্ধন",
+        "aboutUs": "আমাদের সম্পর্কে",
+        "help": "সাহায্য"
+    },
+    "dashboardHeader": {
+        "meterReading": "মিটার রিডিং",
+        "lubricantSale": "লুব্রিকেন্ট বিক্রয়",
+        "creditSale": "ক্রেডিট বিক্রয়",
+        "voucherEntry": "ভাউচার এন্ট্রি",
+        "dayBook": "দিনের বই",
+        "purchaseInvoice": "ক্রয় চালান"
+    },
+    "dashboardMainTitles": {
+        "purchaseReports": "মাসভিত্তিক ক্রয় প্রতিবেদন",
+        "saleReports": "মাসভিত্তিক বিক্রয় প্রতিবেদন"
+    },
+    "dashboardCardTitles": {
+        "availableStock": "উপলব্ধ স্টক",
+        "outStandingList": "আউটস্ট্যান্ডিং তালিকা"
+    },
+    "NavbarData": {
+        "myProfile": "আমার প্রোফাইল",
+        "notifications": "বিজ্ঞপ্তি",
+        "callSupport": "সমর্থন",
+        "logout": "প্রস্থান"
+    },
+    "tableTitles": {
+        "unitMaster": "ইউনিট মাস্টার",
+        "itemCategory": "আইটেম বিভাগ",
+        "itemMaster": "আইটেম মাস্টার",
+        "tankMaster": "ট্যাংক মাস্টার",
+        "pumpMaster": "পাম্প মাস্টার",
+        "shiftMaster": "শিফট মাস্টার",
+        "accountHead": "হিসাব প্রধান",
+        "accountLedger": "অ্যাকাউন্ট লেজার",
+        "bankAccounts": "ব্যাংক হিসাব",
+        "cardPos": "Card/Pos",
+        "customer": "Add customers",
+        "supplier": "Suppliers",
+        "tanker": "tankers",
+        "staffMaster": "Staffs",
+        "rateMaster": "Rates",
+        "MeterOpening": "Meter Openings",
+        "meterReading": "Meter Reading",
+        "addInfo": "Add information",
+        "MeterReadingEntry": "Add meter reading",
+        "transactionDetails":{
+            "bank":"Bank",
+            "cash":"Cash"
+        }
+    },
+    "add": {
+        "addUnitMaster": "আইটেম মাস্টার যোগ করুন",
+        "addItemCategory": "আইটেম বিভাগ যোগ করুন",
+        "addItemMaster": "আইটেম মাস্টার যোগ করুন",
+        "addTank": "ট্যাঙ্ক যোগ করুন",
+        "addPump": "পাম্প যোগ করুন",
+        "addNozzle": "অগ্রভাগ যোগ করুন",
+        "shiftMaster": "শিফট মাস্টার যোগ করুন",
+        "accountHead": "অ্যাকাউন্ট প্রধান যোগ করুন",
+        "accountLedger": "অ্যাকাউন্ট লেজার যোগ করুন",
+        "addCardPos": "Add Card/Pos",
+        "addCustomer": "Add customers",
+        "addSupplier": "Add Supplier",
+        "addStaffMaster": "add staff",
+        "rateMaster": "Add Rate",
+        "addMeterOpening": "Add Meter Opening"
+    },
+    "edit": {
+        "editUnitMaster": "ইউনিট সম্পাদনা করুন",
+        "editItemCategory": "আইটেম বিভাগ সম্পাদনা করুন",
+        "editItemMaster": "আইটেম সম্পাদনা করুন",
+        "editTankMaster": "ট্যাঙ্ক সম্পাদনা করুন",
+        "editAccoutnHead": "একাউন্ট হেড এডিট করুন",
+        "editAccountLedger": "অ্যাকাউন্ট লেজার সম্পাদনা করুন",
+        "editBankAccount": "ব্যাঙ্ক অ্যাকাউন্ট সম্পাদনা করুন",
+        "editcardPos": "Edit Pos/Card",
+        "editCustomer": "Edit customer",
+        "editSupplier": "Edit supplier",
+        "editRate": "Edit Rate",
+        "editMeterOpening": "Edit Meter Opening",
+        "editShiftMaster": "Edit Shift Master"
+    },
+    "addMsg": {
+        "unitmaster": "ইউনিট যোগ করতে, এখানে আপনার ইউনিট লিখুন",
+        "itemCategory": "আইটেম বিভাগ যোগ করতে, এখানে আপনার আইটেম বিভাগ লিখুন",
+        "rateMaster": "You have not added a rate yet!!! Please add one..."
+    },
+    "editMsg": {
+        "unitmaster": "ইউনিট আপডেট করতে, এখানে আপনার আপডেট ইউনিট লিখুন",
+        "itemCategory": "আইটেম বিভাগ আপডেট করতে, এখানে আপনার আইটেম বিভাগ আপডেট করুন"
+    },
+    "buttonNames": {
+        "cancel": "বাতিল করুন",
+        "add": "যোগ করুন",
+        "update": "হালনাগাদ",
+        "yes": "Yes",
+        "no": "No",
+        "continue":"Continue"
+    },
+    "noContentPage": "কোন বিষয়বস্তু পাওয়া যায়নি",
+    "confirmationDialogues": {
+        "meterReadingAddMore": "Do you want to add more readings?"
+    },
+    "forgotPassword":{
+        "title": "Forget Password",
+        "desc":"Don’t worry! It happens. Please enter the email Id, we will send the OTP in this email.",
+        "otpDesc":"Please check your email and enter the OTP sent to - ",
+        "resendOtpMsg":"If you didn't receive a code, try again after",
+        "seconds":"seconds",
+        "resend":"Resend"
+    }
+}

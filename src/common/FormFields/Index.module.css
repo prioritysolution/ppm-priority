@@ -1,0 +1,84 @@
+.textfieldclass input {
+    height: 14px !important;
+    /* padding: 14px 10px !important; */
+     border-radius: 20%;
+  }
+
+  
+  .inputCss .MuiInputBase-root {
+    border-radius: 12px;
+  }
+
+  /* Toggle CSS*/
+
+  .toggle_switch input[type="checkbox"] {
+    display: none;
+  }
+  
+  .toggle_switch .switch {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 25px;
+    width: 31px;
+    height: 16px;
+    top: 0px;
+    left: 1px;
+    bottom: 2;
+    transition: background-color 0.2s ease;
+  }
+  
+  .toggle_switch .switch::before {
+    position: absolute;
+    content: "";
+    left: 3px;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle_switch input[type="checkbox"]:checked+.switch::before {
+    transform: translateX(14px);
+    background-color: #fff;
+  }
+  
+  .toggle_switch input[type="checkbox"]:checked+.switch {
+    background: linear-gradient(0deg, #25AFF2, #25AFF2), #F5F5F3;
+  }
+
+  .phoneNoError{
+    --react-international-phone-border-color: #DD3A26;
+    --react-international-phone-country-selector-border-color: #DD3A26;
+  }
+
+  
+.otpInput{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  text-align: center;
+  font-size: 1.2em;
+  border: 1px solid black;
+}
+
+.otpResendActive{
+  cursor: pointer;
+  --tw-text-opacity: 1;
+    color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.otpResendActive:hover{
+  text-decoration: underline;
+}
+
+.otpResendNotActive{
+  --tw-text-opacity: 1;
+    color: rgb(71 85 105 / var(--tw-text-opacity)) ;
+    cursor: not-allowed;
+}
+
+
+  /*----------------------------------------------------------------*/

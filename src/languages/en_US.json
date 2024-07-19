@@ -1,0 +1,763 @@
+{
+  "loginRedirection": "Please wait...",
+  "companyDetails": {
+    "companyName": "Priority Solutions",
+    "description": "A Petrol Pump Accounting and Inventory management software Developed under the guidance of RPDA",
+    "estd": "2024"
+  },
+  "welcomeTo": "Welcome to",
+  "rightsReserved": "All Rights Reserved",
+  "copyrightBy": "Copyright",
+  "signUptext": {
+    "msg": "Don't have an account yet?",
+    "signUp": "Sign Up!"
+  },
+  "loginText": {
+    "msg": "If you are Customer, Please Click here",
+    "customerLogin": "Customer Login!",
+    "login": "Login"
+  },
+  "label": {
+    "email": "Email",
+    "password": "Password",
+    "addItemMaster": {
+      "itemName": "Item name",
+      "itemShortName": "Item short name",
+      "itemType": "Item type",
+      "unitValue": "Unit value",
+      "unit": "Unit",
+      "cst": "CST",
+      "sgst": "SGST",
+      "igst": "IGST",
+      "basicSaleRate": "Basic sale rate",
+      "rememberQnty": "Remember quantity",
+      "openingQnty": "Opening quantity",
+      "openingRate": "Opening rate",
+      "saleLedger": "Sale ledger",
+      "purchaseLedger": "Purchase ledger"
+    },
+    "addPumpMaster": {
+      "pumpName": "Pump name",
+      "nozzleNumber": "Number of nozzles",
+      "nozzleName": "Nozzle name",
+      "selectTank": "Select tank"
+    },
+    "tankMaster": {
+      "tankName": "Tank name",
+      "product": "Product",
+      "tankDiameter": "Tank diameter (in cm)",
+      "tankLength": "Tank length (in cm)",
+      "maxVolume": "Maximum volume"
+    },
+    "addShiftMaster": {
+      "shiftName": "Shift name",
+      "startTime": "Start time",
+      "endTime": "End time"
+    },
+    "addAccountHead": {
+      "headName": "Head name",
+      "headCode": "Head code",
+      "mainHead": "Main head"
+    },
+    "accountLedger": {
+      "ledgerName": "Ledger name",
+      "ledgerCode": "Ledger Code",
+      "accountHead": "Account head",
+      "openingBalance": "Opening balance",
+      "openingDate": "Opening date"
+    },
+    "addBankAccount": {
+      "bankName": "Bank name",
+      "bankBranch": "Bank branch",
+      "bankIfsc": "Bank ifsc",
+      "accountNo": "Account no",
+      "openingBalance": "Opening balance",
+      "underLedger": "under ledger"
+    },
+    "cardPos": {
+      "posName": "Pos Name",
+      "posProvider": "Pos provider",
+      "posType": "Pos type",
+      "linkBank": "Link Bank",
+      "installationData": "Installation date"
+    },
+    "customer": {
+      "customerName": "Customer name",
+      "customerAddress": "Customer address",
+      "mobile": "Customer mobile",
+      "customerEmail": "Customer email",
+      "gstin": "Customer gstin",
+      "maxCredLimit": "Maximum credit limit",
+      "maxCredDays": "Maximum credit days",
+      "openingBalance": "Opening balance",
+      "underLedger": "Under ledger"
+    },
+    "supplier": {
+      "supplierName": "Supplier name",
+      "supplierAddress": "Supplier address",
+      "mobile": "Supplier mobile",
+      "supplierEmail": "Supplier email",
+      "gstin": "Supplier gstin",
+      "maxCredDays": "Maximum credit days",
+      "openingBalance": "Opening balance",
+      "underLedger": "Under ledger"
+    },
+    "tanker": {
+      "tankerName": "Tanker name",
+      "vehicleName": "Vehicle name",
+      "vehicleNumber": "Vehicle number",
+      "capacity": "Capacity"
+    },
+    "addStaffMaster": {
+      "staffName": "Staff name",
+      "staffAddress": "Staff address",
+      "mobile": "Staff mobile",
+      "staffEmail": "Staff email",
+      "staffType": "Staff type",
+      "designation": "Staff designation",
+      "joiningDate": "Staff joining date",
+      "basic": "Staff basic",
+      "da": "Staff DA",
+      "hra": "Staff HRA",
+      "ta": "Staff TA",
+      "misc": "Staff misc.",
+      "pf": "Staff PF"
+    },
+    "rateMaster": {
+      "item": "Item",
+      "itemRate": "Item rate",
+      "rateDate": "Rate date"
+    },
+    "addMeterOpening": {
+      "pump": "Pump",
+      "nozzle": "Nozzle",
+      "openingReading": "Opening reading",
+      "openingDate": "Opening date"
+    },
+    "addInfo": {
+      "itemQuantity": "Item quantity",
+      "itemRate": "Item rate"
+    },
+    "meterReading": {
+      "itemName": "Item name",
+      "openingReading": "Opening reading",
+      "closingReading": "Closing reading",
+      "testingNumber": "Testing number",
+      "creditQuantity": "Credit quantity",
+      "itemRate": "Item rate",
+      "readDate": "Reading date",
+      "transactionDetails": "Transaction details",
+      "transactionBanking": {
+        "amount": "amount",
+        "cardPos": "Card/Pos"
+      },
+      "transactionCash": {
+        "denominator": "Denominator"
+      }
+    },
+    "sale": {
+      "readDate": "Reading date",
+      "soldBy": "Sold by",
+      "soldTo": "Sold to",
+      "paymentMethod": "Select Payment method",
+      "selectCustomer": "Select Customer",
+      "custName": "Name",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "gstIn": "GSTIN",
+      "transactionBanking": {
+        "amount": "amount",
+        "cardPos": "Card/Pos"
+      },
+      "transactionCash": {
+        "denominator": "Denominator"
+      }
+    },
+    "purchase": {
+      "readDate": "Reading date",
+      "soldBy": "Sold by",
+      "soldTo": "Sold to",
+      "paymentMethod": "Select Payment method",
+      "selectCustomer": "Select Customer",
+      "custName": "Name",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "gstIn": "GSTIN",
+      "transactionBanking": {
+        "amount": "amount",
+        "cardPos": "Card/Pos"
+      },
+      "transactionCash": {
+        "denominator": "Denominator"
+      }
+    },
+    "calculateAuto": "Calculate automatically"
+  },
+  "placeholders": {
+    "email": "Enter your email",
+    "password": "Enter your password",
+    "search": "Search",
+    "addUnitMaster": "Enter unit",
+    "addItemCategory": "Enter item category",
+    "addItemMaster": {
+      "itemName": "Enter item name",
+      "itemShortName": "Enter item short name",
+      "itemType": "Select item type",
+      "unitValue": "Enter unit value",
+      "unit": "Select unit",
+      "cst": "Enter CST",
+      "sgst": "Enter SGST",
+      "igst": "Enter IGST",
+      "basicSaleRate": "Enter basic sale rate",
+      "rememberQnty": "Enter remember quantity",
+      "openingQnty": "Enter opening quantity",
+      "openingRate": "Enter opening rate"
+    },
+    "addPumpMaster": {
+      "pumpName": "Enter pump name",
+      "nozzleNumber": "Enter number of nozzles",
+      "nozzleName": "Enter name of the nozzle",
+      "selectTank": "Select tank"
+    },
+    "tankMaster": {
+      "tankName": "Enter tank name",
+      "product": "Enter product",
+      "tankDiameter": "Enter tank diameter (in cm)",
+      "tankLength": "Enter tank length (in cm)",
+      "maxVolume": "Enter maximum volume"
+    },
+    "addShiftMaster": {
+      "shiftName": "Enter shift name",
+      "startTime": "Enter start time",
+      "endTime": "Enter end time"
+    },
+    "addAccountHead": {
+      "headName": "Enter head name",
+      "headCode": "Enter head code"
+    },
+    "accountLedger": {
+      "ledgerName": "Enter ledger name",
+      "ledgerCode": "Enter ledger code",
+      "openingBalance": "Enter opening balance"
+    },
+    "addBankAccount": {
+      "bankName": "Enter bank name",
+      "bankBranch": "Enter bank branch",
+      "bankIfsc": "Enter bank ifsc",
+      "accountNo": "Enter account no",
+      "openingBalance": "Enter opening balance"
+    },
+    "cardPos": {
+      "posName": "Enter pos name",
+      "posProvider": "Enter pos provider"
+    },
+    "customer": {
+      "customerName": "Enter customer name",
+      "customerAddress": "Enter customer address",
+      "mobile": "Enter customer mobile number",
+      "customerEmail": "Enter customer email",
+      "gstin": "Enter GSTIN",
+      "maxCredLimit": "Enter max credit limit",
+      "maxCredDays": "Enter max credit days",
+      "openingBalance": "Enter opening balance"
+    },
+    "supplier": {
+      "supplierName": "Enter supplier name",
+      "supplierAddress": "Enter supplier address",
+      "mobile": "Enter supplier mobile number",
+      "supplierEmail": "Enter supplier email",
+      "gstin": "Enter GSTIN",
+      "maxCredDays": "Enter max credit days",
+      "openingBalance": "Enter opening balance"
+    },
+    "tanker": {
+      "tankerName": "Enter tanker name",
+      "vehicleName": "Enter vehicle name",
+      "vehicleNumber": "Enter vehicle number",
+      "capacity": "Enter capacity"
+    },
+    "addStaffMaster": {
+      "staffName": "Enter staff name",
+      "staffAddress": "Enter staff address",
+      "mobile": "Enter staff mobile",
+      "staffEmail": "Enter staff email",
+      "basic": "Enter staff basic",
+      "da": "Enter staff da",
+      "hra": "Enter staff hra",
+      "ta": "Enter staff ta",
+      "misc": "Enter staff misc.",
+      "pf": "Enter staff pf"
+    },
+    "rateMaster": {
+      "itemRate": "Enter item rate"
+    },
+    "addMeterOpening": {
+      "openingReading": "Enter opening date"
+    },
+    "addInfo": {
+      "itemQuantity": "Enter item quantity",
+      "itemRate": "Enter item rate"
+    },
+    "meterReading": {
+      "itemName": "Enter item name",
+      "openingReading": "Enter opening reading",
+      "closingReading": "Enter closing reading",
+      "testingNumber": "Enter testing number",
+      "creditQuantity": "Enter credit quantity",
+      "itemRate": "Enter item rate",
+      "transactionBanking": {
+        "amount": "Enter amount"
+      },
+      "transactionCash": {
+        "denominator": "Enter denominator"
+      }
+    },
+    "sale": {
+      "selectCustomer": "Select Customer",
+      "custName": "Enter customer name",
+      "address": "Enter customer address",
+      "phone": "Enter phone number",
+      "email": "Enter customer email",
+      "gstIn": "Enter GSTIN number",
+      "transactionBanking": {
+        "amount": "Enter amount"
+      },
+      "transactionCash": {
+        "denominator": "Enter denominator"
+      }
+    },
+    "purchase": {
+      "selectCustomer": "Select Customer",
+      "custName": "Enter customer name",
+      "address": "Enter customer address",
+      "phone": "Enter phone number",
+      "email": "Enter customer email",
+      "gstIn": "Enter GSTIN number",
+      "transactionBanking": {
+        "amount": "Enter amount"
+      },
+      "transactionCash": {
+        "denominator": "Enter denominator"
+      }
+    }
+  },
+  "rememberMe": "Remember me",
+  "forgetPassword": "Forgot password?",
+  "signIn": "Sign in",
+  "support": "Support",
+  "phoneNumbers": {
+    "numberOne": "1234567890",
+    "numberTwo": "1234567890"
+  },
+  "whatsAppNumber": "1234567890",
+  "errors": {
+    "patternErrors": {
+      "email": "Please enter a valid email",
+      "password": "Password must contain an uppercase, lowercase, number, symbol and minimum 8 characters",
+      "addItemMaster": {
+        "unitValue": "Unit master should contain a number more than zero",
+        "cst": "CST should not be negetive",
+        "sgst": "SGST should not be negetive",
+        "igst": "IGST should not be negetive",
+        "basicSaleRate": "Basic sale rate should contain a number greater than zero",
+        "rememberQnty": "Remember quantity should contain a number greater than zero",
+        "openingQnty": "Opening quantity should not be negetive",
+        "openingRate": "Opening rate should not be negetive"
+      },
+      "addPumpMaster": {
+        "nozzleNumber": "Number of nozzles should be greater than zero"
+      },
+      "tankMaster": {
+        "tankDiameter": "Tank diameter should be greater than zero",
+        "tankLength": "Tank length should be greater than zero",
+        "maxVolume": "Maximum volume should be greater than zero"
+      },
+      "addAccountHead": {
+        "headCode": "Head code should be greater than zero"
+      },
+      "shiftMaster": {
+        "invalidTime": "Please enter a valid time"
+      },
+      "accountLedger": {
+        "ledgerCode": "Ledger code should be greater than zero",
+        "openingBalance": "opening balance should be greater than zero",
+        "invalidDate": "Please enter a valid date"
+      },
+      "bankAccount": {
+        "accountNo": {
+          "positive": "Please enter a valid number",
+          "notDecimal": "Decimal value is not allowed"
+        },
+        "openingBalance": "Opening balance should be greater than zero",
+        "invalidDate": "Please enter a valid opening date"
+      },
+      "customer": {
+        "email": "Please enter a valid email",
+        "maxCredLimit": "Max credit limit should be greater than zero",
+        "maxCredDays": "Max credit days should be greater than zero",
+        "openingBalance": "Opening balance should be greater than zero",
+        "mobileNo": "Please enter a valid mobile No"
+      },
+      "supplier": {
+        "email": "Please enter a valid email",
+        "maxCredLimit": "Max credit limit should be greater than zero",
+        "maxCredDays": "Max credit days should be greater than zero",
+        "openingBalance": "Opening balance should be greater than zero",
+        "mobileNo": "Please enter a valid mobile No"
+      },
+      "tanker": {
+        "capacity": "Capacity should be greater than zero"
+      },
+      "addStaffMaster": {
+        "staffEmail": "Please enter a valid email",
+        "basic": "Staff basic should be greater than zero",
+        "da": "Staff DA should be greater than zero",
+        "hra": "Staff HRA should be greater than zero",
+        "ta": "Staff TA should be greater than zero",
+        "misc": "Staff misc. should be greater than zero",
+        "pf": "Staff PF should be greater than zero",
+        "mobileNo": "Please enter a valid mobile no"
+      },
+      "rateMaster": {
+        "itemRate": "Item rate should be greater than zero",
+        "invalidDate": "Please select a valid date"
+      },
+      "meterOpening": {
+        "openingReading": "Opening reading should be greater than zero",
+        "invalidDate": "Please select a valid date",
+        "rangeDate": "Date should be in range of financial year"
+      },
+      "meterReading": {
+        "itemQuantity": "Item quantity should be greater than zero",
+        "itemRate": "Item quantity should be greater than zero",
+        "closingReading": {
+          "moreThan": "Closing reading should be a greater than zero",
+          "lessThan": "Closing reading should be greater than opening reading"
+        },
+        "testingNumber": {
+          "positive": "Testing number should be a positive number",
+          "diffCheck": "Testing number cannot exceed the difference between opening and closing readings"
+        },
+        "creditQuantity": {
+          "positive": "Credit quantity should be a positive number",
+          "diffCheck": "Credit quantity cannot exceed the difference between closing and opening readings minus testing"
+        },
+        "transactionBanking": {
+          "amount": "Amount must be a positive number"
+        }
+      },
+      "sale": {
+        "soldTo": "Please select one option",
+        "invalidDate": "Please select date",
+        "custName": "Please enter a valid customer name",
+        "adddress": "Please enter a valid address",
+        "phone": "Please enter a valid phone no",
+        "email": "Please enter a valid email",
+        "transactionBanking": {
+          "amount": "Amount must be a positive number"
+        },
+        "rangeDate": "Date should be in range of financial year"
+      },
+      "purchase": {
+        "soldTo": "Please select one option",
+        "invalidDate": "Please select date",
+        "custName": "Please enter a valid customer name",
+        "adddress": "Please enter a valid address",
+        "phone": "Please enter a valid phone no",
+        "email": "Please enter a valid email",
+        "transactionBanking": {
+          "amount": "Amount must be a positive number"
+        },
+        "rangeDate": "Date should be in range of financial year"
+      }
+    },
+    "requiredErrors": {
+      "email": "Please enter your email",
+      "password": "Please enter your password",
+      "unitMaster": "Please enter unit",
+      "itemCategory": "Please enter item category",
+      "addItemMaster": {
+        "itemName": "Please enter item name",
+        "itemShortName": "Please enter item short name",
+        "itemType": "Please Select item type",
+        "unitValue": "Please enter unit value",
+        "unit": "Please select unit",
+        "cst": "Please enter CST",
+        "sgst": "Please enter SGST",
+        "igst": "Please enter IGST",
+        "basicSaleRate": "Please enter basic sale rate",
+        "rememberQnty": "Please enter remember quantity",
+        "openingQnty": "Please enter opening quantity",
+        "openingRate": "Please enter opening rate",
+        "saleLedger": "Sale ledger should contain a number greater than zero",
+        "purchaseLedger": "Purchase ledger should contain a number greater than zero"
+      },
+      "addPumpMaster": {
+        "pumpName": "Please enter pump name",
+        "nozzleNumber": "Please enter number of nozzles",
+        "nozzleName": "Please enter name of the nozzle",
+        "selectTank": "Please select tank"
+      },
+      "tankMaster": {
+        "tankName": "Please enter tank name",
+        "product": "Please enter product",
+        "tankDiameter": "Please enter tank diameter",
+        "tankLength": "Please enter tank length",
+        "maxVolume": "Please enter maximum volume"
+      },
+      "shiftMaster": {
+        "shiftName": "Please enter shift name"
+      },
+      "addAccountHead": {
+        "headName": "Please enter head name",
+        "headCode": "Please enter head code",
+        "mainHead": "Please select main head"
+      },
+      "accountLedger": {
+        "ledgerName": "Please enter account ledger name",
+        "ledgerCode": "Please enter ledger code",
+        "accountHead": "Please enter account head",
+        "openingBalance": "Please enter opening balance"
+      },
+      "bankAccount": {
+        "bankName": "Please enter Bank name",
+        "bankBranch": "Please enter bank branch",
+        "bankIfSc": "Please enter bank ifsc code",
+        "accountNo": "Please enter bank account number",
+        "underLedger": "Please select an under ledger",
+        "openingBalance": "Please enter opening balance"
+      },
+      "cardPos": {
+        "posName": "Please enter pos name",
+        "posProvider": "Please enter pos provider",
+        "linkBank": "Please select bank"
+      },
+      "customer": {
+        "name": "Please enter customer name",
+        "address": "Please enter customer address",
+        "email": "Please enter customer email Id",
+        "maxCredLimit": "Please enter max credit limit",
+        "maxCredDays": "Please enter max credit days",
+        "openingBalance": "Please enter openning balance",
+        "underLedger": "Please select an underledger"
+      },
+      "supplier": {
+        "name": "Please enter supplier name",
+        "address": "Please enter supplier address",
+        "email": "Please enter supplier email Id",
+        "maxCredDays": "Please enter max credit days",
+        "openingBalance": "Please enter openning balance",
+        "underLedger": "Please select an underledger",
+        "gstin": "Please enter gstIn"
+      },
+      "tanker": {
+        "tankerName": "Please enter tanker name",
+        "vehicleName": "Please enter vehicle name",
+        "vehicleNumber": "Please enter vehicle number",
+        "capacity": "Please enter capacity"
+      },
+      "addStaffMaster": {
+        "staffName": "Please enter staff name",
+        "staffAddress": "Please enter staff address",
+        "staffEmail": "Please enter staff email",
+        "staffType": "Please select staff type",
+        "designation": "Please  select staff designation",
+        "basic": "Please enter staff basic",
+        "da": "Please enter staff DA",
+        "hra": "Please enter staff HRA",
+        "ta": "Please enter staff TA",
+        "misc": "Please enter staff misc.",
+        "pf": "Please enter staff PF"
+      },
+      "rateMaster": {
+        "item": "Please select item",
+        "itemRate": "Please enter rate for this item"
+      },
+      "meterOpening": {
+        "pump": "Please select a pump",
+        "nozzle": "Please select a nozzle",
+        "openingReading": "Please enter a meter opening"
+      },
+      "meterReading": {
+        "shiftName": "Please select staff name",
+        "pumpName": "Please select pump name",
+        "nozzleName": "Please select nozzle name",
+        "staffName": "Please select staffName",
+        "itemName": "Please select item name",
+        "itemQuantity": "Please enter item quantity",
+        "itemRate": "Please enter item rate",
+        "closingReading": "Please enter closing reading",
+        "testingNumber": "Please enter testing number",
+        "creditQuantity": "Please neter credit quantity",
+        "transactionBanking": {
+          "amount": "Please enter amount",
+          "cardPos": "Please select card/Pos"
+        }
+      },
+      "sale": {
+        "soldTo": "Please select one option",
+        "soldBy": "Please select one option",
+        "selectParty": "Please select a customer",
+        "custName": "Please enter customer name",
+        "adddress": "Please enter an address",
+        "phone": "Please enter a valid phone no",
+        "email": "Please enter a valid email",
+        "gstIn": "Please enter GSTIN",
+        "transactionBanking": {
+          "amount": "Please enter amount",
+          "cardPos": "Please select card/Pos"
+        }
+      },
+      "purchase": {
+        "soldTo": "Please select one option",
+        "soldBy": "Please select one option",
+        "selectParty": "Please select a customer",
+        "custName": "Please enter customer name",
+        "adddress": "Please enter an address",
+        "phone": "Please enter a valid phone no",
+        "email": "Please enter a valid email",
+        "gstIn": "Please enter GSTIN",
+        "transactionBanking": {
+          "amount": "Please enter amount",
+          "cardPos": "Please select card/Pos"
+        }
+      }
+    }
+  },
+  "sideBarTexts": {
+    "dashboard": "Dashboard",
+    "pump": "Pump",
+    "accounts": "Accounts",
+    "hr": "HR",
+    "reports": "Reports",
+    "utility": "Utility",
+    "register": "Register",
+    "aboutUs": "About Us",
+    "help": "Help"
+  },
+  "dashboardHeader": {
+    "meterReading": "Meter Reading",
+    "lubricantSale": "Lubricant Sale",
+    "creditSale": "Credit Sale",
+    "voucherEntry": "Voucher Entry",
+    "dayBook": "DayBook",
+    "purchaseInvoice": "Purchase Invoice"
+  },
+  "dashboardMainTitles": {
+    "purchaseReports": "Monthwise purchase reports",
+    "saleReports": "Monthwise sale reports"
+  },
+  "dashboardCardTitles": {
+    "availableStock": "Available Stock",
+    "outStandingList": "List of OutStanding"
+  },
+  "NavbarData": {
+    "myProfile": "My Profile",
+    "notifications": "Notifications",
+    "callSupport": "Support",
+    "logout": "Logout"
+  },
+  "tableTitles": {
+    "unitMaster": "Unit Master",
+    "itemCategory": "Item Category",
+    "itemMaster": "Item Master",
+    "tankMaster": "Tank Master",
+    "pumpMaster": "Pump Master",
+    "addNozzle": "Add Nozzle",
+    "shiftMaster": "Shift Master",
+    "accountHead": "Account head",
+    "accountLedger": "Account Ledger",
+    "bankAccounts": "Bank accounts",
+    "cardPos": "Card/Pos",
+    "customer": "Customers",
+    "supplier": "Suppliers",
+    "tanker": "Tankers",
+    "staffMaster": "Staffs",
+    "rateMaster": "Rates",
+    "MeterOpening": "Meter Openings",
+    "meterReading": "Meter Reading",
+    "sale": "Sales",
+    "purchase": "Purchase",
+    "customerDetails": "Add Customer Details",
+    "addInfo": "Add information",
+    "MeterReadingEntry": "Add meter reading",
+    "transactionDetails": {
+      "bank": "Bank",
+      "cash": "Cash"
+    },
+    "addItem": "Add Items",
+    "paymentMethod": {
+      "bank": "Enter bank details",
+      "cash": "Enter cash details"
+    },
+    "cashDenomTable": {
+      "in": "Enter cash in details",
+      "out": "Enter cash out details"
+    }
+  },
+  "add": {
+    "addUnitMaster": "Add Unit",
+    "addItemCategory": "Add Item Category",
+    "addItemMaster": "Add Item",
+    "addTank": "Add Tank",
+    "addPump": "Add Pump",
+    "addNozzle": "Add Nozzle",
+    "shiftMaster": "Add Shift Master",
+    "accountHead": "Add Account Head",
+    "accountLedger": "Add Account Ledger",
+    "addBankAccount": "Add Bank Account",
+    "addCardPos": "Add Card/Pos",
+    "addCustomer": "Add Customer",
+    "addSupplier": "Add Supplier",
+    "addTanker": "Add Tanker",
+    "addStaffMaster": "Add Staff",
+    "rateMaster": "Add Rate",
+    "addMeterOpening": "Add Meter Opening"
+  },
+  "edit": {
+    "editUnitMaster": "Edit unit",
+    "editItemCategory": "Edit item Category",
+    "editItemMaster": "Edit item",
+    "editTankMaster": "Edit tank",
+    "editAccoutnHead": "Edit account head",
+    "editAccountLedger": "Edit account ledger",
+    "editBankAccount": "Edit bank account",
+    "editcardPos": "Edit Pos/Card",
+    "editCustomer": "Edit customer",
+    "editSupplier": "Edit supplier",
+    "editRate": "Edit Rate",
+    "editMeterOpening": "Edit Meter Opening",
+    "editShiftMaster": "Edit Shift Master"
+  },
+  "addMsg": {
+    "unitmaster": "To add unit, please enter your unit here",
+    "itemCategory": "To add item category, please enter your item category here",
+    "rateMaster": "You have not added a rate yet!!! Please add one..."
+  },
+  "editMsg": {
+    "unitmaster": "To update unit, please enter your update unit here",
+    "itemCategory": "To update item category, please your update item category here"
+  },
+  "buttonNames": {
+    "cancel": "Cancel",
+    "add": "Add",
+    "update": "Update",
+    "yes": "Yes",
+    "no": "No",
+    "continue": "Continue"
+  },
+  "noContentPage": "No Content found",
+  "confirmationDialogues": {
+    "meterReadingAddMore": "Do you want to add more readings?"
+  },
+  "forgotPassword": {
+    "title": "Forget Password",
+    "desc": "Don’t worry! It happens. Please enter the email Id, we will send the OTP in this email.",
+    "otpDesc": "Please check your email and enter the OTP sent to - ",
+    "resendOtpMsg": "If you didn't receive a code, try again after",
+    "seconds": "seconds",
+    "resend": "Resend"
+  }
+}

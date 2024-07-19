@@ -1,0 +1,625 @@
+{
+    "loginRedirection": "कृपया प्रतीक्षा करें...",
+    "companyDetails": {
+        "companyName": "Priority Solutions",
+        "description": "आरपीडीए के मार्गदर्शन में एक पेट्रोल पंप लेखा और इन्वेंटरी प्रबंधन सॉफ्टवेयर विकसित किया गया",
+        "estd": "2024"
+    },
+    "welcomeTo": "आपका स्वागत है",
+    "rightsReserved": "सर्वाधिकार सुरक्षित",
+    "copyrightBy": "कॉपीराइट",
+    "signUptext": {
+        "msg": "अब तक कोई खाता नहीं है?",
+        "signUp": "साइन अप करें!"
+    },
+    "loginText": {
+        "msg": "यदि आप ग्राहक हैं, तो कृपया यहां क्लिक करें",
+        "customerLogin": "ग्राहक लॉगिन!",
+        "login": "लॉगिन"
+    },
+    "label": {
+        "email": "ईमेल",
+        "password": "पासवर्ड",
+        "addItemMaster": {
+            "itemName": "आइटम नाम",
+            "itemShortName": "आइटम का संक्षिप्त नाम",
+            "itemType": "वस्तु का प्रकार",
+            "unitValue": "ईकाइ का मूल्य",
+            "unit": "इकाई",
+            "cst": "सीएसटी",
+            "sgst": "एसजीएसटी",
+            "igst": "आईजीएसटी",
+            "basicSaleRate": "मूल विक्रय दर",
+            "rememberQnty": "मात्रा याद रखें",
+            "openingQnty": "प्रारंभिक राशि",
+            "openingRate": "उद्घाटन दर"
+        },
+        "addPumpMaster": {
+            "pumpName": "पंप का नाम",
+            "nozzleNumber": "नोजल की संख्या",
+            "nozzleName": "नोजल का नाम",
+            "selectTank": "टैंक का चयन करें"
+        },
+        "tankMaster": {
+            "tankName": "टैंक का नाम",
+            "product": "उत्पाद",
+            "tankDiameter": "टैंक का व्यास (सेमी में)",
+            "tankLength": "टैंक की लंबाई (सेमी में)",
+            "maxVolume": "अधिकतम मात्रा"
+        },
+        "addShiftMaster": {
+            "shiftName": "शिफ्ट का नाम",
+            "startTime": "समय शुरू",
+            "endTime": "अंत समय"
+        },
+        "addAccountHead": {
+            "headName": "मुखिया का नाम",
+            "headCode": "प्रमुख कोड",
+            "mainHead": "मुख्य मुखिया"
+        },
+        "accountLedger": {
+            "ledgerName": "बहीखाता का नाम",
+            "ledgerCode": "खाता बही कोड",
+            "accountHead": "खाता प्रमुख",
+            "openingBalance": "प्रारंभिक जमा",
+            "openingDate": "खुलने की तिथि"
+        },
+        "addBankAccount": {
+            "bankName": "बैंक का नाम",
+            "bankBranch": "बैंक शाखा",
+            "bankIfsc": "बैंक आईएफएससी",
+            "accountNo": "खाता नंबर",
+            "openingBalance": "प्रारंभिक जमा",
+            "itemType": "वस्तु का प्रकार"
+        },
+        "cardPos": {
+            "posName": "Pos Name",
+            "posProvider": "Pos provider",
+            "posType": "Pos type",
+            "linkBank": "Link Bank",
+            "installationData": "Installation data"
+        },
+        "customer": {
+            "customerName": "Customer name",
+            "customerAddress": "Customer address",
+            "mobile": "Customer mobile",
+            "customerEmail": "Customer email",
+            "gstin": "Customer gstin",
+            "maxCredLimit": "Maximum credit limit",
+            "maxCredDays": "Maximum credit days",
+            "openingBalance": "Opening balance",
+            "underLedger": "Under ledger"
+        },
+        "supplier": {
+            "supplierName": "Supplier name",
+            "supplierAddress": "Supplier address",
+            "mobile": "Supplier mobile",
+            "supplierEmail": "Supplier email",
+            "gstin": "Supplier gstin",
+            "maxCredDays": "Maximum credit days",
+            "openingBalance": "Opening balance",
+            "underLedger": "Under ledger"
+        },
+        "tanker": {
+            "tankerName": "Tanker name",
+            "vehicleName": "Vehicle name",
+            "vehicleNumber": "Vehicle number",
+            "capacity": "Capacity"
+        },
+        "addStaffMaster": {
+            "staffName": "Staff name",
+            "staffAddress": "Staff address",
+            "mobile": "Staff mobile",
+            "staffEmail": "Staff mobile",
+            "staffType": "Staff type",
+            "designation": "Staff designation",
+            "joiningDate": "Staff joining date",
+            "basic": "Staff basic",
+            "da": "Staff DA",
+            "hra": "Staff HRA",
+            "ta": "Staff TA",
+            "misc": "Staff misc.",
+            "pf": "Staff PF"
+        },
+        "rateMaster": {
+            "item": "Item",
+            "itemRate": "Item rate",
+            "rateDate": "Rate date"
+        },
+        "addMeterOpening": {
+            "pump": "Pump",
+            "nozzle": "Nozzle",
+            "openingReading": "Opening reading",
+            "openingDate": "Opening date"
+        },
+        "addInfo": {
+            "itemQuantity": "Item quantity",
+            "itemRate": "Item rate"
+        },
+        "meterReading": {
+            "itemName": "Item name",
+            "openingReading": "Opening reading",
+            "closingReading": "Closing reading",
+            "testingNumber": "Testing number",
+            "creditQuantity": "Credit quantity",
+            "itemRate": "Item rate",
+            "readDate": "Reading date",
+            "transactionDetails":"Transaction details",
+            "transactionBanking":{
+                "amount":"Amount",
+                "cardPos":"Card/Pos"
+            },
+            "transactionCash":{
+                "denominator":"Denominator"
+            }
+        }
+    },
+    "placeholders": {
+        "email": "अपना ईमेल दर्ज करें",
+        "password": "अपना कूटशब्द भरें",
+        "search": "खोज",
+        "addUnitMaster": "यूनिट मास्टर दर्ज करें",
+        "addItemCategory": "आइटम श्रेणी दर्ज करें",
+        "addItemMaster": {
+            "itemName": "आइटम का नाम दर्ज करें",
+            "itemShortName": "आइटम का संक्षिप्त नाम दर्ज करें",
+            "itemType": "आइटम प्रकार चुनें",
+            "unitValue": "इकाई मान दर्ज करें",
+            "unit": "इकाई का चयन करें",
+            "cst": "सीएसटी दर्ज करें",
+            "sgst": "एसजीएसटी दर्ज करें",
+            "igst": "आईजीएसटी दर्ज करें",
+            "basicSaleRate": "मूल विक्रय दर दर्ज करें",
+            "rememberQnty": "स्मरण मात्रा दर्ज करें",
+            "openingQnty": "प्रारंभिक मात्रा दर्ज करें",
+            "openingRate": "प्रारंभिक दर दर्ज करें"
+        },
+        "addPumpMaster": {
+            "pumpName": "पंप का नाम दर्ज करें",
+            "nozzleNumber": "नोजल नंबर दर्ज करें",
+            "nozzleName": "नोजल का नाम दर्ज करें",
+            "selectTank": "टैंक का चयन करें"
+        },
+        "tankMaster": {
+            "tankName": "टैंक का नाम दर्ज करें",
+            "product": "उत्पाद दर्ज करें",
+            "tankDiameter": "टैंक का व्यास दर्ज करें (सेमी में)",
+            "tankLength": "टैंक की लंबाई दर्ज करें (सेमी में)",
+            "maxVolume": "अधिकतम मात्रा दर्ज करें"
+        },
+        "addShiftMaster": {
+            "shiftName": "शिफ्ट नाम दर्ज करें",
+            "startTime": "प्रारंभ समय दर्ज करें",
+            "endTime": "अंत समय दर्ज करें"
+        },
+        "addAccountHead": {
+            "headName": "मुखिया का नाम दर्ज करें",
+            "headCode": "हेड कोड दर्ज करें"
+        },
+        "accountLedger": {
+            "ledgerName": "खाता बही का नाम दर्ज करें",
+            "ledgerCode": "खाता बही कोड दर्ज करें",
+            "openingBalance": "आरंभिक शेष दर्ज करें"
+        },
+        "addBankAccount": {
+            "bankName": "बैंक का नाम दर्ज करें",
+            "bankBranch": "बैंक शाखा दर्ज करें",
+            "bankIfsc": "बैंक ifsc दर्ज करें",
+            "accountNo": "खाता संख्या दर्ज करें",
+            "openingBalance": "आरंभिक शेष दर्ज करें"
+        },
+        "cardPos": {
+            "posName": "Enter pos name",
+            "posProvider": "Enter pos provider"
+        },
+        "customer": {
+            "customerName": "Enter customer name",
+            "customerAddress": "Enter customer address",
+            "mobile": "Enter customer mobile number",
+            "customerEmail": "Enter customer email",
+            "gstin": "Enter GSTIN",
+            "maxCredLimit": "Enter max credit limit",
+            "maxCredDays": "Enter max credit days",
+            "openingBalance": "Enter opening balance"
+        },
+        "supplier": {
+            "supplierName": "Enter supplier name",
+            "supplierAddress": "Enter supplier address",
+            "mobile": "Enter supplier mobile number",
+            "supplierEmail": "Enter supplier email",
+            "gstin": "Enter GSTIN",
+            "maxCredDays": "Enter max credit days",
+            "openingBalance": "Enter opening balance"
+        },
+        "tanker": {
+            "tankerName": "Enter tanker name",
+            "vehicleName": "Enter vehicle name",
+            "vehicleNumber": "Enter vehicle number",
+            "capacity": "Enter capacity"
+        },
+        "addStaffMaster": {
+            "staffName": "Enter staff name",
+            "staffAddress": "Enter staff address",
+            "mobile": "Enter staff mobile",
+            "staffEmail": "Enter staff email",
+            "basic": "Enter staff basic",
+            "da": "Enter staff da",
+            "hra": "Enter staff hra",
+            "ta": "Enter staff ta",
+            "misc": "Enter staff misc.",
+            "pf": "Enter staff pf"
+        },
+        "rateMaster": {
+            "itemRate": "Enter item rate"
+        },
+        "addMeterOpening": {
+            "openingReading": "Enter opening date"
+        },
+        "addInfo": {
+            "itemQuantity": "Enter item quantity",
+            "itemRate": "Enter item rate"
+        },
+        "meterReading": {
+            "itemName": "Enter item name",
+            "openingReading": "Enter opening reading",
+            "closingReading": "Enter closing reading",
+            "testingNumber": "Enter testing number",
+            "creditQuantity": "Enter credit quantity",
+            "itemRate": "Enter item rate",
+            "transactionBanking":{
+                "amount":"Enter amount"
+            },
+            "transactionCash":{
+                "denominator":"Enter denominator"
+            }
+        }
+    },
+    "rememberMe": "मुझे याद करो",
+    "forgetPassword": "पासवर्ड भूल गए?",
+    "signIn": "साइन इन करें",
+    "support": "सहायता",
+    "phoneNumbers": {
+        "numberOne": "1234567890",
+        "numberTwo": "1234567890"
+    },
+    "whatsAppNumber": "1234567890",
+    "errors": {
+        "patternErrors": {
+            "email": "कृपया अपना ईमेल सही ढंग से दर्ज करें",
+            "password": "पासवर्ड में अपरकेस, लोअरकेस, संख्या, प्रतीक और न्यूनतम 8 अक्षर होने चाहिए",
+            "addItemMaster": {
+                "unitValue": "यूनिट मास्टर में शून्य से अधिक संख्या होनी चाहिए",
+                "cst": "सीएसटी में शून्य से बड़ी संख्या होनी चाहिए",
+                "sgst": "एसजीएसटी में शून्य से बड़ी संख्या होनी चाहिए",
+                "igst": "आईजीएसटी में शून्य से बड़ी संख्या होनी चाहिए",
+                "basicSaleRate": "मूल बिक्री दर में शून्य से अधिक संख्या होनी चाहिए",
+                "rememberQnty": "याद रखें मात्रा में शून्य से बड़ी संख्या होनी चाहिए",
+                "openingQnty": "आरंभिक मात्रा में शून्य से बड़ी संख्या होनी चाहिए",
+                "openingRate": "प्रारंभिक दर में शून्य से अधिक संख्या होनी चाहिए"
+            },
+            "addPumpMaster": {
+                "nozzleNumber": "नोजल की संख्या शून्य से अधिक होनी चाहिए"
+            },
+            "tankMaster": {
+                "tankDiameter": "टैंक का व्यास शून्य से अधिक होना चाहिए",
+                "tankLength": "टैंक की लंबाई शून्य से अधिक होनी चाहिए",
+                "maxVolume": "अधिकतम मात्रा शून्य से अधिक होनी चाहिए"
+            },
+            "addAccountHead": {
+                "headCode": "हेड कोड शून्य से अधिक होना चाहिए"
+            },
+            "shiftMaster": {
+                "invalidTime": "कृपया एक वैध समय दर्ज करें"
+            },
+            "accountLedger": {
+                "ledgerCode": "लेजर कोड शून्य से अधिक होना चाहिए",
+                "openingBalance": "आरंभिक शेष शून्य से अधिक होना चाहिए",
+                "invalidDate": "कृपया कोई मान्य दिनांक दर्ज करें"
+            },
+            "bankAccount": {
+                "accountNo": {
+                    "positive": "कृपया सही अंक दर्ज करें",
+                    "notDecimal": "दशमलव मान की अनुमति नहीं है"
+                },
+                "openingBalance": "प्रारंभिक शेष शून्य से अधिक होना चाहिए",
+                "invalidDate": "कृपया एक वैध उद्घाटन तिथि दर्ज करें"
+            },
+            "customer": {
+                "email": "Please enter a valid email",
+                "maxCredLimit": "Max credit limit should be greater than zero",
+                "maxCredDays": "Max credit days should be greater than zero",
+                "openingBalance": "Opening balance should be greater than zero",
+                "mobileNo": "Please enter a valid mobile No"
+            },
+            "supplier": {
+                "email": "Please enter a valid email",
+                "maxCredLimit": "Max credit limit should be greater than zero",
+                "maxCredDays": "Max credit days should be greater than zero",
+                "openingBalance": "Opening balance should be greater than zero",
+                "mobileNo": "Please enter a valid mobile No"
+            },
+            "tanker": {
+                "capacity": "Capacity should be greater than zero"
+            },
+            "addStaffMaster": {
+                "staffEmail": "Please enter a valid email",
+                "basic": "Staff basic should be greater than zero",
+                "da": "Staff DA should be greater than zero",
+                "hra": "Staff HRA should be greater than zero",
+                "ta": "Staff TA should be greater than zero",
+                "misc": "Staff misc. should be greater than zero",
+                "pf": "Staff PF should be greater than zero",
+                "mobileNo": "Please enter a valid mobile no"
+            },
+            "rateMaster": {
+                "itemRate": "Item rate should be greater than zero",
+                "invalidDate": "Please select a valid date"
+            },
+            "meterOpening": {
+                "openingReading": "Opening reading should be greater than zero",
+                "invalidDate": "Please select a valid date"
+            },
+            "meterReading": {
+                "itemQuantity": "Item quantity should be greater than zero",
+                "itemRate": "Item quantity should be greater than zero",
+                "closingReading": { "moreThan":"Closing reading should be a greater than zero",
+                "lessThan":"Closing reading should be greater than opening reading"
+            },
+                "testingNumber": {
+                    "positive": "Testing number should be a positive number",
+                    "diffCheck": "Testing number cannot exceed the difference between opening and closing readings"
+                },
+                "creditQuantity": {
+                    "positive": "Credit quantity should be a positive number",
+                    "diffCheck": "Credit quantity cannot exceed the difference between closing and opening readings minus testing"
+                },
+                "transactionBanking":{
+                    "amount":"Amount must be a positive number"
+                }
+            }
+        },
+        "requiredErrors": {
+            "email": "कृपया अपना ईमेल दर्ज करें",
+            "password": "कृपया अपना पासवर्ड दर्ज करें",
+            "unitMaster": "कृपया इकाई दर्ज करें",
+            "itemCategory": "कृपया आइटम श्रेणी दर्ज करें",
+            "addItemMaster": {
+                "itemName": "कृपया आइटम का नाम दर्ज करें",
+                "itemShortName": "कृपया आइटम का संक्षिप्त नाम दर्ज करें",
+                "itemType": "कृपया आइटम प्रकार चुनें",
+                "unitValue": "कृपया इकाई मान दर्ज करें",
+                "unit": "कृपया इकाई का चयन करें",
+                "cst": "कृपया सीएसटी दर्ज करें",
+                "sgst": "कृपया एसजीएसटी दर्ज करें",
+                "igst": "कृपया आईजीएसटी दर्ज करें",
+                "basicSaleRate": "कृपया मूल बिक्री दर दर्ज करें",
+                "rememberQnty": "कृपया स्मरणीय मात्रा दर्ज करें",
+                "openingQnty": "कृपया आरंभिक मात्रा दर्ज करें",
+                "openingRate": "कृपया आरंभिक दर दर्ज करें"
+            },
+            "addPumpMaster": {
+                "pumpName": "कृपया पंप का नाम दर्ज करें",
+                "nozzleNumber": "कृपया नोजल की संख्या दर्ज करें",
+                "nozzleName": "कृपया नोजल का नाम दर्ज करें",
+                "selectTank": "कृपया टैंक का चयन करें"
+            },
+            "tankMaster": {
+                "tankName": "कृपया टैंक का नाम दर्ज करें",
+                "product": "कृपया उत्पाद दर्ज करें",
+                "tankDiameter": "कृपया टैंक का व्यास दर्ज करें",
+                "tankLength": "कृपया टैंक की लंबाई दर्ज करें",
+                "maxVolume": "कृपया अधिकतम मात्रा दर्ज करें"
+            },
+            "shiftMaster": {
+                "shiftName": "कृपया शिफ्ट नाम दर्ज करें",
+                "startTime": "कृपया प्रारंभ समय दर्ज करें",
+                "endTime": "कृपया समाप्ति समय दर्ज करें"
+            },
+            "addAccountHead": {
+                "headName": "कृपया मुखिया का नाम दर्ज करें",
+                "headCode": "कृपया हेड कोड दर्ज करें",
+                "mainHead": "कृपया मुख्य शीर्ष का चयन करें"
+            },
+            "accountLedger": {
+                "ledgerName": "कृपया खाता बही का नाम दर्ज करें",
+                "ledgerCode": "कृपया खाता बही कोड दर्ज करें",
+                "accountHead": "कृपया खाता शीर्ष दर्ज करें",
+                "openingBalance": "कृपया आरंभिक शेष दर्ज करें"
+            },
+            "bankAccount": {
+                "bankName": "कृपया बैंक का नाम दर्ज करें",
+                "bankBranch": "कृपया बैंक शाखा दर्ज करें",
+                "bankIfSc": "कृपया बैंक आईएफएससी कोड दर्ज करें",
+                "accountNo": "कृपया बैंक खाता संख्या दर्ज करें",
+                "underLedger": "कृपया एक अंडर लेजर का चयन करें",
+                "openingBalance": "कृपया आरंभिक शेष दर्ज करें"
+            },
+            "cardPos": {
+                "posName": "Please enter pos name",
+                "posProvider": "Please enter pos provider",
+                "linkBank": "Please select bank"
+            },
+            "customer": {
+                "name": "Please enter customer name",
+                "address": "Please enter customer address",
+                "email": "Please enter customer email Id",
+                "maxCredLimit": "Please enter max credit limit",
+                "maxCredDays": "Please enter max credit days",
+                "openingBalance": "Please enter openning balance",
+                "underLedger": "Please select an underledger"
+            },
+            "supplier": {
+                "name": "Please enter supplier name",
+                "address": "Please enter supplier address",
+                "email": "Please enter supplier email Id",
+                "maxCredDays": "Please enter max credit days",
+                "openingBalance": "Please enter openning balance",
+                "underLedger": "Please select an underledger",
+                "gstin": "Please enter gstIn"
+            },
+            "tanker": {
+                "tankerName": "Please enter tanker name",
+                "vehicleName": "Please enter vehicle name",
+                "vehicleNumber": "Please enter vehicle number",
+                "capacity": "Please enter capacity"
+            },
+            "addStaffMaster": {
+                "staffName": "Please enter staff name",
+                "staffAddress": "Please enter staff address",
+                "staffEmail": "Please enter staff email",
+                "staffType": "Please select staff type",
+                "designation": "Please  select staff designation",
+                "basic": "Please enter staff basic",
+                "da": "Please enter staff DA",
+                "hra": "Please enter staff HRA",
+                "ta": "Please enter staff TA",
+                "misc": "Please enter staff misc.",
+                "pf": "Please enter staff PF"
+            },
+            "rateMaster": {
+                "item": "Please select item",
+                "itemRate": "Please enter item rate"
+            },
+            "meterOpening": {
+                "pump": "Please select a pump",
+                "nozzle": "Please select a nozzle",
+                "openingReading": "Please enter a meter opening"
+            },
+            "meterReading": {
+                "shiftName": "Please select staff name",
+                "pumpName": "Please select pump name",
+                "nozzleName": "Please select nozzle name",
+                "staffName": "Please select staffName",
+                "itemName": "Please select item name",
+                "itemQuantity": "Please enter item quantity",
+                "itemRate": "Please enter item rate",
+                "closingReading": "Please enter closing reading",
+                "testingNumber": "Please enter testing number",
+                "creditQuantity": "Please neter credit quantity",
+                "transactionBanking":{
+                    "amount":"Please enter amount",
+                    "cardPos":"Please select card/Pos"
+                }
+            }
+        }
+    },
+    "sideBarTexts": {
+        "dashboard": "डैशबोर्ड",
+        "pump": "पम्प",
+        "accounts": "हिसाब किताब",
+        "hr": "मानव संसाधन",
+        "reports": "रिपोर्टों",
+        "utility": "उपयोगिता",
+        "register": "पंजीकरण करवाना",
+        "aboutUs": "हमारे बारे में",
+        "help": "मदद"
+    },
+    "dashboardHeader": {
+        "meterReading": "मीटर रीडिंग",
+        "lubricantSale": "स्नेहक बिक्री",
+        "creditSale": "क्रेडिट बिक्री",
+        "voucherEntry": "वाउचर प्रविष्टि",
+        "dayBook": "दिन की किताब",
+        "purchaseInvoice": "खरीद चालान"
+    },
+    "dashboardMainTitles": {
+        "purchaseReports": "माहवार खरीद रिपोर्ट",
+        "saleReports": "मासिक बिक्री रिपोर्ट"
+    },
+    "dashboardCardTitles": {
+        "availableStock": "उपलब्ध स्टॉक",
+        "outStandingList": "बकाया की सूची"
+    },
+    "NavbarData": {
+        "myProfile": "मेरी प्रोफाइल",
+        "notifications": "सूचनाएं",
+        "callSupport": "सहायता",
+        "logout": "लॉग आउट"
+    },
+    "tableTitles": {
+        "unitMaster": "आइटम मास्टर",
+        "itemCategory": "आइटम श्रेणी",
+        "itemMaster": "आइटम मास्टर",
+        "tankMaster": "टैंक मास्टर",
+        "pumpMaster": "पम्प मास्टर",
+        "shiftMaster": "शिफ्ट मास्टर",
+        "accountHead": "खाता प्रमुख",
+        "accountLedger": "खाता बही",
+        "bankAccounts": "बैंक खाते",
+        "cardPos": "Card/Pos",
+        "customer": "Customers",
+        "supplier": "Suppliers",
+        "tanker": "tankers",
+        "staffMaster": "Staffs",
+        "rateMaster": "Rates",
+        "MeterOpening": "Meter Openings",
+        "meterReading": "Meter Reading",
+        "addInfo": "Add information",
+        "MeterReadingEntry": "Add meter reading",
+        "transactionDetails":{
+            "bank":"Bank",
+            "cash":"Cash"
+        }
+    },
+    "add": {
+        "addUnitMaster": "यूनिट मास्टर जोड़ें",
+        "addItemCategory": "आइटम श्रेणी जोड़ें",
+        "addItemMaster": "आइटम मास्टर जोड़ें",
+        "addTank": "टैंक जोड़ें",
+        "addPump": "पम्प जोड़ें",
+        "addNozzle": "नोजल जोड़ें",
+        "shiftMaster": "शिफ्ट मास्टर जोड़ें",
+        "accountHead": "खाता प्रमुख जोड़ें",
+        "accountLedger": "खाता बही जोड़ें",
+        "addCardPos": "Add Card/Pos",
+        "addCustomer": "Add Customer",
+        "addSupplier": "Add supplier",
+        "addStaffMaster": "add staff",
+        "rateMaster": "Add rate",
+        "addMeterOpening": "Add Meter Opening"
+    },
+    "edit": {
+        "editUnitMaster": "इकाई संपादित करें",
+        "editItemCategory": "आइटम श्रेणी संपादित करें",
+        "editItemMaster": "संपादित आइटम",
+        "editTankMaster": "टैंक संपादित करें",
+        "editAccoutnHead": "खाता शीर्ष संपादित करें",
+        "editAccountLedger": "खाता बही संपादित करें",
+        "editBankAccount": "बैंक खाता संपादित करें",
+        "editcardPos": "Edit Pos/Card",
+        "editCustomer": "Edit customer",
+        "editSupplier": "Edit supplier",
+        "editRate": "Edit Rate",
+        "editMeterOpening": "Edit Meter Opening",
+        "editShiftMaster": "Edit Shift Master"
+    },
+    "addMsg": {
+        "unitmaster": "यूनिट जोड़ने के लिए, कृपया यहां अपनी यूनिट दर्ज करें",
+        "itemCategory": "आइटम श्रेणी जोड़ने के लिए, कृपया यहां अपनी आइटम श्रेणी दर्ज करें",
+        "rateMaster": "You have not added a rate yet!!! Please add one..."
+    },
+    "editMsg": {
+        "unitmaster": "यूनिट को अपडेट करने के लिए कृपया अपनी अपडेट यूनिट यहां दर्ज करें",
+        "itemCategory": "आइटम श्रेणी को अपडेट करने के लिए, कृपया यहां अपनी आइटम श्रेणी अपडेट करें"
+    },
+    "buttonNames": {
+        "cancel": "रद्द करना",
+        "add": "जोड़ना",
+        "update": "अद्यतन",
+        "yes": "Yes",
+        "no": "No",
+        "continue":"Continue"
+    },
+    "noContentPage": "कोई सामग्री नहीं मिली",
+    "confirmationDialogues": {
+        "meterReadingAddMore": "DO you want to add more readings?"
+    },
+    "forgotPassword":{
+        "title": "Forget Password",
+        "desc":"Don’t worry! It happens. Please enter the email Id, we will send the OTP in this email.",
+        "otpDesc":"Please check your email and enter the OTP sent to - ",
+        "resendOtpMsg":"If you didn't receive a code, try again after",
+        "seconds":"seconds",
+        "resend":"Resend"
+    }
+}
