@@ -27,7 +27,7 @@ const SideBarContainer = ({}) => {
     if (token) {
       getSideBarDataApiCall();
     }
-  }, []);
+  }, [finYearGetApiCall, getSideBarDataApiCall]);
 
   return (
     <SideBar

@@ -15,7 +15,7 @@ const LoginContainer = () => {
     if (token && orgId) {
       router.push(pathName.dashboard);
     }
-  }, [token, orgId]);
+  }, [token, orgId, router]);
 
   return (
     <Login

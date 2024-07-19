@@ -41,7 +41,7 @@ const DashboardContainer = () => {
       getRateItemApiCall(orgId);
       checkRateApiCall(orgId);
     }
-  }, [token, orgId]);
+  }, [token, orgId, getItemApiCall, getRateItemApiCall, checkRateApiCall]);
 
   return (
     <>

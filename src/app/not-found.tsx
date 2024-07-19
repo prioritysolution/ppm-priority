@@ -31,7 +31,7 @@ export default function NotFound() {
               width={350}
             />
             <p className="text-gray-500 text-2xl">
-              Oops! Couldn't find the page.
+              Oops! Couldn&apos;t find the page.
             </p>
             <button
               onClick={handleReturnHome}

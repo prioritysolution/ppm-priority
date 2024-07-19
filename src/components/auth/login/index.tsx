@@ -45,7 +45,7 @@ const Login: FC<LoginProps> = ({
     return () => {
       window.removeEventListener("keypress", handleKeyDown);
     };
-  }, []);
+  }, [handleKeyDown]);
   return (
     <Grid container>
       <Grid

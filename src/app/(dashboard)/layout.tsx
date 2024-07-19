@@ -20,7 +20,7 @@ const Layout: FC<LayoutInterface> = ({ children }) => {
 
   useEffect(() => {
     if (!token || !orgId) router.replace(pathName.login);
-  }, [token, orgId]);
+  }, [token, orgId, router]);
 
   return (
     <Box className={`w-full min-h-screen`}>

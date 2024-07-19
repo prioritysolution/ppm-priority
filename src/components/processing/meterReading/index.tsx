@@ -210,6 +210,7 @@ const MeterReading: FC<MeterReadingProps> = ({
     bankTransactionTotal,
     cashTransactionGrandTotal,
     grandTotal,
+    setFinalAmountDiff,
   ]);
 
   const isDis = cashDenomData.map(
