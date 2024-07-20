@@ -1,5 +1,5 @@
 import { Box, Divider, Grid } from "@mui/material";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import text from "@/languages/en_US.json";
 import dynamic from "next/dynamic";
 import RateMasterTable from "./RateMasterTable";

@@ -678,15 +678,15 @@ export const MeterReadingHooks = () => {
   }, [meterReadingGrandTotal, gstGrandTotal]);
 
   useEffect(() => {
-    setGrandTotal(meterReadingGrandTotal + gstGrandTotal);
+    const decimalTobePaid = grandTotal - bankTransactionTotal;
 
-    const decimalPart = grandTotal.toString().includes(".")
+    const decimalPart = decimalTobePaid.toString().includes(".")
       ? Number(grandTotal.toString().split(".")[1]) /
         (grandTotal.toString().split(".")[1].length * 10)
       : 0;
 
     setDecimal(parseFloat(decimalPart.toFixed(2)));
-  }, [grandTotal]);
+  }, [grandTotal, bankTransactionTotal]);
 
   //handle post table data
   const handlePostTableData = () => {
@@ -696,10 +696,16 @@ export const MeterReadingHooks = () => {
     // handleResetForm();
   };
 
-  // useEffect(() => {
-  //   if (meterReading.length === 0) handleResetForm();
-  //   // console.log(finalAmountDiff);
-  // }, [meterReading]);
+  useEffect(() => {
+    setFinalAmountDiff(
+      grandTotal - bankTransactionTotal - cashTransactionGrandTotal
+    );
+  }, [
+    bankTransactionTotal,
+    cashTransactionGrandTotal,
+    grandTotal,
+    setFinalAmountDiff,
+  ]);
 
   //cash denom array
   useEffect(() => {
@@ -807,9 +813,7 @@ export const MeterReadingHooks = () => {
       .then((res: any) => {
         // console.log(res)
         if (res.status === 200) {
-          toast.success("Reading data fetched successfully");
-          // setEditData(null)
-          console.log(res);
+          toast.success(res.message);
         } else {
           toast.error(res.message);
         }

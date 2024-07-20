@@ -196,22 +196,6 @@ const MeterReading: FC<MeterReadingProps> = ({
   const financialYear = useSelector(
     (state: any) => state.sideBarData?.financialYear
   );
-  useEffect(() => {
-    setFinalAmountDiff(
-      grandTotal - bankTransactionTotal - cashTransactionGrandTotal
-    );
-    // console.log("diff", finalAmountDiff);
-    // console.log(
-    //   "diff2",
-    //   grandTotal - bankTransactionTotal - cashTransactionGrandTotal
-    // );
-  }, [
-    bankTransactionData,
-    bankTransactionTotal,
-    cashTransactionGrandTotal,
-    grandTotal,
-    setFinalAmountDiff,
-  ]);
 
   const isDis = cashDenomData.map(
     (data: any, idx: number) =>
@@ -427,6 +411,7 @@ const MeterReading: FC<MeterReadingProps> = ({
                   meter reading and additional item grand total
                 </Typography>
               )}
+              <pre>{JSON.stringify({ decimal }, null, 4)}</pre>
               {finalAmountDiff < 0 ? (
                 <p
                   className={`text-red-500 text-lg mr-5 ${

@@ -47,7 +47,7 @@ export const SideBar: React.FC<SideBarProps> = ({
   logOutLoader,
   handleSubMenuClose,
   loader,
-  orgName,
+  orgName = "",
 }) => {
   const router = useRouter();
   const pathName = usePathname();
@@ -181,7 +181,7 @@ export const SideBar: React.FC<SideBarProps> = ({
               <ListItem>
                 <ListItemAvatar>
                   <Avatar className="bg-sky-500 capitalize">
-                    {orgName.charAt(0)}
+                    {orgName?.charAt(0)}
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText

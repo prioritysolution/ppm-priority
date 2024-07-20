@@ -1,10 +1,11 @@
 "use client";
 import SideBar from "@/components/sideBar";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import getSessionStorageData from "@/utils/getSessionStorageData";
 import { SideBarHooks } from "./Hooks";
 
 const SideBarContainer = ({}) => {
+  const [orgName, setOrgName] = useState("");
   const {
     finYearGetApiCall,
     logOutGetApiCall,
@@ -16,8 +17,8 @@ const SideBarContainer = ({}) => {
     logOutLoader,
   } = SideBarHooks();
   // const orgName = getSessionStorageData("orgName");
-  let orgName = getSessionStorageData("orgName") || "--";
   useEffect(() => {
+    setOrgName(getSessionStorageData("orgName"));
     const token = getSessionStorageData("token");
     const organizationId = getSessionStorageData("orgId");
 
@@ -27,7 +28,7 @@ const SideBarContainer = ({}) => {
     if (token) {
       getSideBarDataApiCall();
     }
-  }, [finYearGetApiCall, getSideBarDataApiCall]);
+  }, []);
 
   return (
     <SideBar

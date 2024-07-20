@@ -1,10 +1,7 @@
-import AccountHeadContainer from '@/container/master/AccountHead'
-import React from 'react'
+import AccountHeadContainer from "@/container/master/AccountHead";
 
 const page = () => {
-  return (
-   <AccountHeadContainer />
-  )
-}
+  return <AccountHeadContainer />;
+};
 
-export default page
+export default page;
