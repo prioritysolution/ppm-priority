@@ -8,6 +8,8 @@ import { ItemMasterHooks } from "@/container/master/ItemMaster/Hooks";
 import { CardPosHooks } from "@/container/master/CardPos/Hooks";
 import { MeterReadingHooks } from "../MeterReading/Hooks";
 import { SideBarHooks } from "@/container/Sidebar/Hooks";
+import { TankMasterHooks } from "@/container/master/TankMaster/Hooks";
+import { PumpMasterHooks } from "@/container/master/PumpMaster/Hooks";
 
 const SaleContainer = () => {
   const {
@@ -31,8 +33,6 @@ const SaleContainer = () => {
     itemTableData,
     itemTableGrandTotal,
     calculateItemTableGrandTotal,
-    showAddItemForm,
-    showPaymentMethodForm,
     paymentOption,
     handlePaymentOption,
     showPaymentModal,
@@ -47,6 +47,23 @@ const SaleContainer = () => {
     cashOutTransactionGrandTotal,
     handleCashTransactionPost,
     handleCreditTransactionPost,
+    activeAddItems,
+    addItemCat,
+    handleCatOptionChange,
+    showPetroliumModal,
+    handleClosePetroliumModal,
+    addPetroliumItemFormik,
+    pumpId,
+    petroliumItemRate,
+    petroliumItemLoaders,
+    handleItemTableDelete,
+    decimal,
+    decimalInput,
+    handleCalculateDecimalChange,
+    decimalInputError,
+    handleCalculateCheck,
+    calculateCheck,
+    addPartyLoaders,
   } = SalesHooks();
 
   const { getStaffApiCall } = StaffHooks();
@@ -55,6 +72,8 @@ const SaleContainer = () => {
   const { getCardPosApiCall } = CardPosHooks();
   const { getNoteDenomApiCall } = MeterReadingHooks();
   const { finYearGetApiCall } = SideBarHooks();
+  const { getTankItemApiCall } = TankMasterHooks();
+  const { getPumpMasterApiCall } = PumpMasterHooks();
 
   useEffect(() => {
     if (token && orgId) {
@@ -64,8 +83,17 @@ const SaleContainer = () => {
       getCardPosApiCall(orgId);
       getNoteDenomApiCall();
       finYearGetApiCall(orgId);
+      getTankItemApiCall(orgId);
+      getPumpMasterApiCall(orgId, "pump");
     }
   }, [orgId, token]);
+
+  useEffect(() => {
+    if (token && orgId && pumpId) {
+      getPumpMasterApiCall(orgId, "nozzle", pumpId);
+      // handleNozzleChange();
+    }
+  }, [pumpId, token, orgId]);
 
   useEffect(() => {
     calculateItemTableGrandTotal();
@@ -90,8 +118,6 @@ const SaleContainer = () => {
       handleCloseModal={handleCloseModal}
       saleData={saleData}
       itemTableGrandTotal={itemTableGrandTotal}
-      showAddItemForm={showAddItemForm}
-      showPaymentMethodForm={showPaymentMethodForm}
       paymentOption={paymentOption}
       handlePaymentOption={handlePaymentOption}
       showPaymentModal={showPaymentModal}
@@ -106,6 +132,22 @@ const SaleContainer = () => {
       cashOutTransactionGrandTotal={cashOutTransactionGrandTotal}
       handleCashTransactionPost={handleCashTransactionPost}
       handleCreditTransactionPost={handleCreditTransactionPost}
+      activeAddItems={activeAddItems}
+      addItemCat={addItemCat}
+      handleCatOptionChange={handleCatOptionChange}
+      showPetroliumModal={showPetroliumModal}
+      handleClosePetroliumModal={handleClosePetroliumModal}
+      addPetroliumItemFormik={addPetroliumItemFormik}
+      petroliumItemRate={petroliumItemRate}
+      petroliumItemLoaders={petroliumItemLoaders}
+      handleItemTableDelete={handleItemTableDelete}
+      decimal={decimal}
+      decimalInput={decimalInput}
+      handleCalculateDecimalChange={handleCalculateDecimalChange}
+      decimalInputError={decimalInputError}
+      handleCalculateCheck={handleCalculateCheck}
+      calculateCheck={calculateCheck}
+      addPartyLoaders={addPartyLoaders}
     />
   );
 };

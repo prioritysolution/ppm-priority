@@ -91,7 +91,7 @@ const TransactionDetails: FC<TransactionDetailsProps> = ({
                 fullwidthState
               />
             </Grid>
-            {0 < formik?.values?.amount &&
+            {amountTobePaid < formik?.values?.amount &&
               !denominators.some((str) => str.length > 0) && (
                 <div
                   className={`text-sm text-red-500 px-5 ${

@@ -82,9 +82,9 @@ interface MeterReadingProps {
   handleCalculateDecimalChange: any;
   decimalInputError: string;
   finalAmountDiff: number;
-  setFinalAmountDiff: any;
   handleCalculateCheck: any;
   calculateCheck: boolean;
+  postFinalLoaders: boolean;
 }
 
 const MeterReading: FC<MeterReadingProps> = ({
@@ -128,9 +128,9 @@ const MeterReading: FC<MeterReadingProps> = ({
   handleCalculateDecimalChange,
   decimalInputError,
   finalAmountDiff,
-  setFinalAmountDiff,
   handleCalculateCheck,
   calculateCheck,
+  postFinalLoaders,
 }) => {
   const [addDisabled, setAddDisabled] = useState(false);
   const pumpOptions = useSelector(
@@ -411,7 +411,7 @@ const MeterReading: FC<MeterReadingProps> = ({
                   meter reading and additional item grand total
                 </Typography>
               )}
-              <pre>{JSON.stringify({ decimal }, null, 4)}</pre>
+              {/* <pre>{JSON.stringify({ decimal }, null, 4)}</pre> */}
               {finalAmountDiff < 0 ? (
                 <p
                   className={`text-red-500 text-lg mr-5 ${
@@ -442,6 +442,7 @@ const MeterReading: FC<MeterReadingProps> = ({
                 variant={"contained"}
                 buttonextracls={"bg-green-400 w-1/3 capitalize"}
                 handleClick={handleTransactionPost}
+                loading={postFinalLoaders}
                 disabled={
                   bankTransactionTotal + cashTransactionGrandTotal === 0 ||
                   addDisabled ||

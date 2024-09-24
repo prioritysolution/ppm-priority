@@ -29,6 +29,7 @@ import {
 import CustomerDetailsForm from "./CustomerDetailsForm";
 import AddItemTable from "./AddItemTable";
 import PaymentMethodForm from "./PaymentMethodForm";
+import AddPetroliumForm from "./AddPetroliumForm";
 
 interface SaleProps {
   date: Dayjs | null;
@@ -48,8 +49,6 @@ interface SaleProps {
   saleData: any;
   itemTableData: any;
   itemTableGrandTotal: number;
-  showAddItemForm: boolean;
-  showPaymentMethodForm: boolean;
   paymentOption: string;
   handlePaymentOption: any;
   showPaymentModal: boolean;
@@ -70,6 +69,22 @@ interface SaleProps {
   cashOutTransactionGrandTotal: number;
   handleCashTransactionPost: any;
   handleCreditTransactionPost: any;
+  activeAddItems: boolean;
+  addItemCat: string;
+  handleCatOptionChange: any;
+  showPetroliumModal: boolean;
+  handleClosePetroliumModal: any;
+  addPetroliumItemFormik: any;
+  petroliumItemRate: number;
+  petroliumItemLoaders: boolean;
+  handleItemTableDelete: any;
+  decimal: number;
+  decimalInput: number;
+  handleCalculateDecimalChange: any;
+  decimalInputError: string;
+  handleCalculateCheck: any;
+  calculateCheck: boolean;
+  addPartyLoaders: boolean;
 }
 
 const Sale: FC<SaleProps> = ({
@@ -90,8 +105,6 @@ const Sale: FC<SaleProps> = ({
   saleData,
   itemTableData,
   itemTableGrandTotal,
-  showAddItemForm,
-  showPaymentMethodForm,
   paymentOption,
   handlePaymentOption,
   showPaymentModal,
@@ -106,6 +119,22 @@ const Sale: FC<SaleProps> = ({
   cashOutTransactionGrandTotal,
   handleCashTransactionPost,
   handleCreditTransactionPost,
+  activeAddItems,
+  addItemCat,
+  handleCatOptionChange,
+  showPetroliumModal,
+  handleClosePetroliumModal,
+  addPetroliumItemFormik,
+  petroliumItemRate,
+  petroliumItemLoaders,
+  handleItemTableDelete,
+  decimal,
+  decimalInput,
+  handleCalculateDecimalChange,
+  decimalInputError,
+  handleCalculateCheck,
+  calculateCheck,
+  addPartyLoaders,
 }) => {
   const staffData = useSelector((state: any) => state.staff?.staffData)?.map(
     (data: any) => {
@@ -153,6 +182,33 @@ const Sale: FC<SaleProps> = ({
     (state: any) => state.sideBarData?.financialYear
   );
 
+  const petroliumItemData = useSelector(
+    (state: any) => state.tankMasterData?.tankItemData
+  )?.map((item: any) => {
+    return {
+      name: item.Item_Name,
+      value: `${item.Id}`,
+    };
+  });
+
+  const pumpData = useSelector(
+    (state: any) => state.pumpMasterData?.pumpMasterData
+  )?.map((pump: any) => {
+    return {
+      name: pump.Pump_Name,
+      value: `${pump.Id}`,
+    };
+  });
+
+  const nozzleData = useSelector(
+    (state: any) => state.pumpMasterData?.nozzleData
+  )?.map((nozzle: any) => {
+    return {
+      name: nozzle.Nozzle_Name,
+      value: `${nozzle.Id}`,
+    };
+  });
+
   const soldToOption = [
     {
       label: "Party",
@@ -160,6 +216,17 @@ const Sale: FC<SaleProps> = ({
     },
     {
       label: "Other",
+      value: "2",
+    },
+  ];
+
+  const AddItemOption = [
+    {
+      label: "Petrolium",
+      value: "1",
+    },
+    {
+      label: "Lubricant/Other",
       value: "2",
     },
   ];
@@ -213,6 +280,8 @@ const Sale: FC<SaleProps> = ({
                 soldToOption={soldToOption}
                 saleData={saleData}
                 financialYear={financialYear}
+                activeAddItems={activeAddItems}
+
                 //   isDisabled={isDisabled}
               />
             </Grid>
@@ -221,20 +290,37 @@ const Sale: FC<SaleProps> = ({
                 sx={{ width: "100%" }}
                 component="nav"
                 aria-labelledby="addinfo-form"
-                className="border p-5 border-green-400 rounded-md"
+                className="border p-3 border-green-400 rounded-md"
               >
-                <ListItemButton
-                  onClick={() => {}}
-                  sx={{
-                    border: "1px solid green",
-                    borderRadius: "10px",
-                  }}
-                >
-                  <ListItemText primary={text.tableTitles.addItem} />
+                <div className="flex items-center justify-start  gap-10 px-5">
+                  <p className="block text-lg">{text.tableTitles.addItem}</p>
+                  <div>
+                    <RadioGroupField
+                      radioData={AddItemOption}
+                      extraCls="w-full px-3 "
+                      // label={custName ? custName : text.label.sale.soldTo}
+                      row
+                      value={addItemCat}
+                      // color={customerErrorMessage ? "error" : `success`}
+                      handleChange={handleCatOptionChange}
+                      // handleBlur={formik?.handleBlur}
+                      // selectOption={shiftOptions}
+                      // error={formik?.touched?.shift && Boolean(formik?.errors?.soldTo)}
+                      // errorText={formik?.errors?.}
+                      // fullWidthState
+                      // disabled={isDisabled}
+                      disabled={!activeAddItems}
+                    />
+                    {customerErrorMessage && soldToVal === "0" && (
+                      <p className="text-sm text-red-500">
+                        {customerErrorMessage}
+                      </p>
+                    )}
+                  </div>
                   {/* {showAddInfoForm ? <Close /> : <Add />} */}
-                </ListItemButton>
+                </div>
                 <Collapse
-                  in={showAddItemForm}
+                  in={addItemCat === "2"}
                   timeout="auto"
                   unmountOnExit
                   className="p-5 shadow"
@@ -242,6 +328,7 @@ const Sale: FC<SaleProps> = ({
                   <AddItemForm
                     formik={addItemFormik}
                     itemOptions={itemOptions}
+                    showPetroliumModal={showPetroliumModal}
                     // loading={addInfoLoader}
                   />
                 </Collapse>
@@ -270,6 +357,34 @@ const Sale: FC<SaleProps> = ({
               customerData={soldToVal === "1" && customerData}
               formik={soldToVal === "1" ? selectPartyFormik : addNewPartyFormik}
               handleCloseModal={handleCloseModal}
+              customerLoading={addPartyLoaders}
+            />
+          </Container>
+        </Dialog>
+
+        <Dialog open={showPetroliumModal} disableEscapeKeyDown>
+          <DialogTitle className="h-[4rem]">
+            <FlexContentCenter>
+              <Typography className="font-bold text-lg capitalize">
+                {text.label.sale.petrolium.formHeading}
+              </Typography>
+              {/* <IconButton onClick={() => {}}>
+                <Close fontSize="small" />
+              </IconButton> */}
+            </FlexContentCenter>
+          </DialogTitle>
+          <Divider />
+          <Container className="py-5">
+            {/* <MeterReadingEntryForm formik={addGSTFormik} /> */}
+            <AddPetroliumForm
+              // soldToVal={soldToVal}
+              petroliumItemData={petroliumItemData}
+              formik={addPetroliumItemFormik}
+              handleCloseModal={handleClosePetroliumModal}
+              pumpData={pumpData}
+              nozzleData={nozzleData}
+              petroliumItemRate={petroliumItemRate}
+              petroliumItemLoaders={petroliumItemLoaders}
             />
           </Container>
         </Dialog>
@@ -280,7 +395,7 @@ const Sale: FC<SaleProps> = ({
               <AddItemTable
                 additionalItem={itemTableData}
                 itemGrandTotal={itemTableGrandTotal}
-                handleDelete={() => {}}
+                handleDelete={handleItemTableDelete}
               />
             </Box>
           </Box>
@@ -292,20 +407,14 @@ const Sale: FC<SaleProps> = ({
                 sx={{ width: "100%" }}
                 component="nav"
                 aria-labelledby="addinfo-form"
-                className="p-5 border border-green-400 rounded-md"
+                className="p-3 border border-green-400 rounded-md"
               >
-                <ListItemButton
-                  onClick={() => {}}
-                  sx={{
-                    border: "1px solid green",
-                    borderRadius: "10px",
-                  }}
-                >
+                <div>
                   <ListItemText primary={text.label.sale.paymentMethod} />
                   {/* {showAddInfoForm ? <Close /> : <Add />} */}
-                </ListItemButton>
+                </div>
                 <Collapse
-                  in={showPaymentMethodForm}
+                  in={itemTableData.length > 0}
                   timeout="auto"
                   unmountOnExit
                   className="p-5 shadow"
@@ -356,6 +465,12 @@ const Sale: FC<SaleProps> = ({
                   cashOutTransactionGrandTotal={cashOutTransactionGrandTotal}
                   grandTotal={itemTableGrandTotal}
                   handleCashTransactionPost={handleCashTransactionPost}
+                  decimal={decimal}
+                  decimalInput={decimalInput}
+                  handleCalculateDecimalChange={handleCalculateDecimalChange}
+                  decimalInputError={decimalInputError}
+                  handleCalculateCheck={handleCalculateCheck}
+                  calculateCheck={calculateCheck}
                 />
               </Box>
             </Box>

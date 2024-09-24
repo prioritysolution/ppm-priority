@@ -67,5 +67,8 @@ export const endPoints = {
   getGstData: `${createApi}processing/GetGSTData`,
   getNoteDenom: `${createApi}master/getcashdenom`,
   postProcessMeterRead: `${createApi}processing/ProcessMeterRead`,
+  getPetroliumItemRate: `${createApi}processing/getItemRate`,
+  getCustomerDetails: (org_id: number, cust_id: number) =>
+    `${createApi}master/GetCustDetails/${org_id}/${cust_id}`,
   logout: `${createApi}logout`,
 };

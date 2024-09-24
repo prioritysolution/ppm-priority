@@ -36,6 +36,7 @@ interface SaleProps {
   loading: boolean;
   saleData: any;
   financialYear: any;
+  activeAddItems: boolean;
   //   isDisabled: boolean;
 }
 
@@ -53,22 +54,18 @@ const SaleForm: FC<SaleProps> = ({
   loading,
   saleData,
   financialYear,
+  activeAddItems,
   //   isDisabled,
 }) => {
   const custName =
-    saleData && saleData.soldTo && typeof saleData.soldTo === "number"
-      ? soldByDropDownData.filter((data) => data.value === saleData.soldTo)[0]
-          .name
-      : typeof saleData.soldTo === "object"
-      ? saleData.soldTo.custName
-      : null;
+    saleData && saleData.soldTo ? saleData.soldTo.Cust_Name : null;
 
   return (
     <form
       // onSubmit={formik?.handleSubmit}
       className="p-5 border border-green-400 rounded-md"
     >
-      {/* <pre>{JSON.stringify({formik.values},null,4)}</pre> */}
+      {/* <pre>{JSON.stringify({ saleData }, null, 4)}</pre> */}
       <Grid container spacing={2} flexWrap={"wrap"} rowGap={2}>
         <Grid
           item
@@ -79,7 +76,7 @@ const SaleForm: FC<SaleProps> = ({
           justifyContent={"space-between"}
         >
           <DatePickerField
-            label={text.label.sale.readDate}
+            label={text.label.sale.saleDate}
             handleChange={handleDateChange}
             date={date}
             handleError={handleError}
@@ -89,7 +86,7 @@ const SaleForm: FC<SaleProps> = ({
             color={errMessage ? "error" : "success"}
             format="DD-MM-YYYY"
             clearable
-            // isDisabled={isDisabled}
+            isDisabled={activeAddItems}
           />
           {errMessage.length > 0 && (
             <p className="text-xs text-red-600/70 px-2 py-1">{errMessage}</p>
@@ -113,9 +110,10 @@ const SaleForm: FC<SaleProps> = ({
             // errorText={formik?.errors?.}
             // fullWidthState
             // disabled={isDisabled}
+            disabled={activeAddItems}
           />
           {customerErrorMessage && soldToVal === "0" && (
-            <p className="text-sm text-red-500">Please select an option</p>
+            <p className="text-sm text-red-500">{customerErrorMessage}</p>
           )}
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={3}>
@@ -131,24 +129,29 @@ const SaleForm: FC<SaleProps> = ({
             error={formik?.touched?.soldBy && Boolean(formik?.errors?.soldBy)}
             errorText={formik?.touched?.soldBy && formik?.errors?.soldBy}
             fullWidthState
+            disabled={activeAddItems}
           />
         </Grid>
 
-        <FlexBox className="w-full justify-end ">
-          <ButtonFieldInput
-            buttonextracls={`rounded-full bg-[#032974] text-white capitalize`}
-            variant={"contained"}
-            name={text.buttonNames.add}
-            // disabled={soldToVal === "0"}
-            loading={loading}
-            disabled={
-              date === null ||
-              dayjs(date).format("YYYY-MM-DD") < financialYear[0]?.Fin_start ||
-              dayjs(date).format("YYYY-MM-DD") > financialYear[0]?.Fin_To
-            }
-            handleClick={formik.handleSubmit}
-          />
-        </FlexBox>
+        {!activeAddItems && (
+          <FlexBox className="w-full justify-end ">
+            <ButtonFieldInput
+              buttonextracls={`rounded-full bg-[#032974] text-white capitalize`}
+              variant={"contained"}
+              name={text.buttonNames.next}
+              // disabled={soldToVal === "0"}
+              loading={loading}
+              disabled={
+                date === null ||
+                dayjs(date).format("YYYY-MM-DD") <
+                  financialYear[0]?.Fin_start ||
+                dayjs(date).format("YYYY-MM-DD") > financialYear[0]?.Fin_To ||
+                activeAddItems
+              }
+              handleClick={formik.handleSubmit}
+            />
+          </FlexBox>
+        )}
       </Grid>
     </form>
   );

@@ -21,6 +21,7 @@ interface RadioGroupProps {
   radioData: RadioData[];
   color?: "success" | "error" | "warning" | "info";
   row?: boolean;
+  disabled?: boolean;
 }
 
 const RadioGroupField: FC<RadioGroupProps> = ({
@@ -32,9 +33,10 @@ const RadioGroupField: FC<RadioGroupProps> = ({
   label,
   labelCls,
   extraCls,
+  disabled = false,
 }) => {
   return (
-    <FormControl className={extraCls}>
+    <FormControl className={extraCls} disabled={disabled}>
       <FormLabel
         id="demo-controlled-radio-buttons-group"
         className={labelCls}

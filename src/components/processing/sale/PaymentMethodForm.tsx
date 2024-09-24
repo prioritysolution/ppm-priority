@@ -4,8 +4,10 @@ import React, { FC } from "react";
 import text from "@/languages/en_US.json";
 import {
   ButtonFieldInput,
+  CheckBox,
   DropDownField,
   FlexBox,
+  FlexContentCenter,
   TextFieldInput,
 } from "@/common";
 import CashDenomTable from "./CashDenomTable";
@@ -31,6 +33,12 @@ interface PaymentMethodFormProps {
   cashOutTransactionGrandTotal: number;
   grandTotal: number;
   handleCashTransactionPost: any;
+  decimal: number;
+  decimalInput: number;
+  handleCalculateDecimalChange: any;
+  decimalInputError: string;
+  handleCalculateCheck: any;
+  calculateCheck: boolean;
 }
 
 const PaymentMethodForm: FC<PaymentMethodFormProps> = ({
@@ -48,6 +56,12 @@ const PaymentMethodForm: FC<PaymentMethodFormProps> = ({
   cashOutTransactionGrandTotal,
   grandTotal,
   handleCashTransactionPost,
+  decimal,
+  decimalInput,
+  handleCalculateDecimalChange,
+  decimalInputError,
+  handleCalculateCheck,
+  calculateCheck,
 }) => {
   return (
     <Grid container spacing={2}>
@@ -81,18 +95,6 @@ const PaymentMethodForm: FC<PaymentMethodFormProps> = ({
                   fullWidthState
                   // disabled={bankTransactionTotal === amountTobePaid}
                 />
-                {
-                  // amountTobePaid - bankTransactionTotal < formik?.values?.amount &&
-                  // <div
-                  //   className={`text-sm text-red-500 px-5
-                  // `}
-                  // >
-                  //   <p>
-                  //     Grand total amount cannot be greater than
-                  //     {/* {amountTobePaid} */}
-                  //   </p>
-                  // </div>
-                }
               </Grid>
               <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
                 <TextFieldInput
@@ -113,17 +115,6 @@ const PaymentMethodForm: FC<PaymentMethodFormProps> = ({
                   fullwidthState
                 />
               </Grid>
-              {/* <pre>{JSON.stringify({ formik }, null, 4)}</pre> */}
-
-              {/* {
-            formik?.values?.amount > 0 &&
-              amountTobePaid - cashTransactionGrandTotal <
-                formik?.values?.amount && (
-                <div className={`text-sm text-red-500 px-5 `}>
-                  <p>Please decrease cash denominators</p>
-                </div>
-              )} */}
-              {/* <pre>{JSON.stringify({ denominators }, null, 4)}</pre> */}
             </Grid>
           )}
           {paymentOption === "c" && (
@@ -141,7 +132,7 @@ const PaymentMethodForm: FC<PaymentMethodFormProps> = ({
                   totalAmount={cashInTransactionTotal}
                   cashTransactionGrandTotal={cashInTransactionGrandTotal}
                   handleDenominatorChange={handleInDenominatorChange}
-                  amountTobePaid={grandTotal}
+                  amountTobePaid={grandTotal + decimalInput}
                   cashOut={false}
                 />
               </Grid>
@@ -158,13 +149,65 @@ const PaymentMethodForm: FC<PaymentMethodFormProps> = ({
                   totalAmount={cashOutTransactionTotal}
                   cashTransactionGrandTotal={cashOutTransactionGrandTotal}
                   handleDenominatorChange={handleOutDenominatorChange}
-                  amountTobePaid={cashInTransactionGrandTotal - grandTotal}
+                  amountTobePaid={
+                    cashInTransactionGrandTotal - grandTotal - decimalInput
+                  }
                   cashOut={true}
                 />
               </Grid>
             </Grid>
           )}
         </form>
+        {decimal !== 0 && (
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+            <FlexContentCenter className="w-full items-center justify-center gap-5 py-5">
+              <p
+                className={`text-red-500 text-lg mr-5 ${
+                  decimal === 0 && "hidden"
+                }
+                  `}
+              >
+                Amount after decimal points : {decimal}
+              </p>
+              <div className="flex flex-col items-center justify-center">
+                <TextFieldInput
+                  placeholder={
+                    text.placeholders.meterReading.transactionBanking.amount
+                  }
+                  // inputLabel={
+                  //   text.label.meterReading.transactionBanking.amount
+                  // }
+                  extraCls={`w-full `}
+                  textnewclass={`w-[300px]`}
+                  color={`success`}
+                  type={`number`}
+                  textinputname={`decimalInput`}
+                  onChange={handleCalculateDecimalChange}
+                  value={decimalInput}
+                  disabled={decimal === 0 || calculateCheck}
+                  error={
+                    formik?.touched?.amount && Boolean(formik?.errors?.amount)
+                  }
+                  helperText={formik?.touched?.amount && formik?.errors?.amount}
+                  clickEnter={formik?.handleSubmit}
+                  fullwidthState
+                />
+                {decimalInputError.length > 0 && (
+                  <p className="text-red-500 text-sm pt-3">
+                    {decimalInputError}
+                  </p>
+                )}
+              </div>
+              <>
+                <CheckBox
+                  checked={calculateCheck}
+                  handleBoxChange={handleCalculateCheck}
+                />
+                <p className={`text-sm -ml-5`}>{text.label.calculateAuto}</p>
+              </>
+            </FlexContentCenter>
+          </Grid>
+        )}
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <FlexBox className="w-full justify-end">
             <ButtonFieldInput
@@ -174,7 +217,9 @@ const PaymentMethodForm: FC<PaymentMethodFormProps> = ({
               disabled={
                 formik?.values?.amount !== grandTotal &&
                 paymentOption === "c" &&
-                cashInTransactionGrandTotal - cashOutTransactionGrandTotal !==
+                cashInTransactionGrandTotal -
+                  cashOutTransactionGrandTotal -
+                  decimalInput !==
                   grandTotal
               }
               handleClick={

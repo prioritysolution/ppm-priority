@@ -1,10 +1,5 @@
-import {
-  ButtonFieldInput,
-  CommonLoading,
-  FlexCenter,
-  NoContentPage,
-} from "@/common";
-import { Delete, Edit } from "@mui/icons-material";
+import { ButtonFieldInput, NoContentPage } from "@/common";
+import { Delete } from "@mui/icons-material";
 import {
   Paper,
   Table,

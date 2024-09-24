@@ -19,6 +19,7 @@ interface CustomerDetailsFormProps {
   customerData?: CustomerDataProps[];
   formik: any;
   handleCloseModal: any;
+  customerLoading: boolean;
 }
 
 const CustomerDetailsForm: FC<CustomerDetailsFormProps> = ({
@@ -26,6 +27,7 @@ const CustomerDetailsForm: FC<CustomerDetailsFormProps> = ({
   soldToVal,
   customerData,
   handleCloseModal,
+  customerLoading,
 }) => {
   // const employeeName = soldByDropDownData.filter(
   //   (data: any) => data.value === formik?.values?.soldBy
@@ -82,7 +84,7 @@ const CustomerDetailsForm: FC<CustomerDetailsFormProps> = ({
               inputLabel={text.label.sale.custName}
               extraCls={`w-full`}
               color={`success`}
-              textinputname={`custName`}
+              textinputname={`Cust_Name`}
               type={`text`}
               sx={{
                 "& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button":
@@ -94,13 +96,15 @@ const CustomerDetailsForm: FC<CustomerDetailsFormProps> = ({
                 },
               }}
               onChange={formik?.handleChange}
-              value={formik?.values?.custName}
+              value={formik?.values?.Cust_Name}
               handleBlur={formik?.handleBlur}
               error={
-                formik?.touched?.custName && Boolean(formik?.errors?.custName)
+                formik?.touched?.Cust_Name && Boolean(formik?.errors?.Cust_Name)
               }
-              helperText={formik?.touched?.custName && formik?.errors?.custName}
-              clickEnter={formik?.handleSubmit}
+              helperText={
+                formik?.touched?.Cust_Name && formik?.errors?.Cust_Name
+              }
+              // clickEnter={formik?.handleSubmit}
               fullwidthState
             />
           </Grid>
@@ -110,7 +114,7 @@ const CustomerDetailsForm: FC<CustomerDetailsFormProps> = ({
               inputLabel={text.label.sale.address}
               extraCls={`w-full`}
               color={`success`}
-              textinputname={`address`}
+              textinputname={`Cust_Addr`}
               type={`text`}
               sx={{
                 "& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button":
@@ -122,12 +126,14 @@ const CustomerDetailsForm: FC<CustomerDetailsFormProps> = ({
                 },
               }}
               onChange={formik?.handleChange}
-              value={formik?.values?.address}
+              value={formik?.values?.Cust_Addr}
               handleBlur={formik?.handleBlur}
               error={
-                formik?.touched?.address && Boolean(formik?.errors?.address)
+                formik?.touched?.Cust_Addr && Boolean(formik?.errors?.Cust_Addr)
               }
-              helperText={formik?.touched?.address && formik?.errors?.address}
+              helperText={
+                formik?.touched?.Cust_Addr && formik?.errors?.Cust_Addr
+              }
               clickEnter={formik?.handleSubmit}
               fullwidthState
             />
@@ -138,7 +144,7 @@ const CustomerDetailsForm: FC<CustomerDetailsFormProps> = ({
               inputLabel={text.label.sale.phone}
               extraCls={`w-full`}
               color={`success`}
-              textinputname={`phone`}
+              textinputname={`Cust_Mobile`}
               type={`text`}
               sx={{
                 "& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button":
@@ -150,10 +156,15 @@ const CustomerDetailsForm: FC<CustomerDetailsFormProps> = ({
                 },
               }}
               onChange={formik?.handleChange}
-              value={formik?.values?.phone}
+              value={formik?.values?.Cust_Mobile}
               handleBlur={formik?.handleBlur}
-              error={formik?.touched?.phone && Boolean(formik?.errors?.phone)}
-              helperText={formik?.touched?.phone && formik?.errors?.phone}
+              error={
+                formik?.touched?.Cust_Mobile &&
+                Boolean(formik?.errors?.Cust_Mobile)
+              }
+              helperText={
+                formik?.touched?.Cust_Mobile && formik?.errors?.Cust_Mobile
+              }
               clickEnter={formik?.handleSubmit}
               fullwidthState
             />
@@ -164,7 +175,7 @@ const CustomerDetailsForm: FC<CustomerDetailsFormProps> = ({
               inputLabel={text.label.sale.email}
               extraCls={`w-full`}
               color={`success`}
-              textinputname={`email`}
+              textinputname={`Cust_Mail`}
               type={`email`}
               sx={{
                 "& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button":
@@ -176,10 +187,14 @@ const CustomerDetailsForm: FC<CustomerDetailsFormProps> = ({
                 },
               }}
               onChange={formik?.handleChange}
-              value={formik?.values?.email}
+              value={formik?.values?.Cust_Mail}
               handleBlur={formik?.handleBlur}
-              error={formik?.touched?.email && Boolean(formik?.errors?.email)}
-              helperText={formik?.touched?.email && formik?.errors?.email}
+              error={
+                formik?.touched?.Cust_Mail && Boolean(formik?.errors?.Cust_Mail)
+              }
+              helperText={
+                formik?.touched?.Cust_Mail && formik?.errors?.Cust_Mail
+              }
               clickEnter={formik?.handleSubmit}
               fullwidthState
             />
@@ -190,7 +205,7 @@ const CustomerDetailsForm: FC<CustomerDetailsFormProps> = ({
               inputLabel={text.label.sale.gstIn}
               extraCls={`w-full`}
               color={`success`}
-              textinputname={`gstIn`}
+              textinputname={`Cust_GSTIN`}
               type={`text`}
               sx={{
                 "& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button":
@@ -202,10 +217,15 @@ const CustomerDetailsForm: FC<CustomerDetailsFormProps> = ({
                 },
               }}
               onChange={formik?.handleChange}
-              value={formik?.values?.gstIn}
+              value={formik?.values?.Cust_GSTIN}
               handleBlur={formik?.handleBlur}
-              error={formik?.touched?.gstIn && Boolean(formik?.errors?.gstIn)}
-              helperText={formik?.touched?.gstIn && formik?.errors?.gstIn}
+              error={
+                formik?.touched?.Cust_GSTIN &&
+                Boolean(formik?.errors?.Cust_GSTIN)
+              }
+              helperText={
+                formik?.touched?.Cust_GSTIN && formik?.errors?.Cust_GSTIN
+              }
               clickEnter={formik?.handleSubmit}
               fullwidthState
             />
@@ -225,6 +245,7 @@ const CustomerDetailsForm: FC<CustomerDetailsFormProps> = ({
           buttonextracls={`rounded-full bg-[#032974] text-white capitalize`}
           variant={"contained"}
           name={text.buttonNames.add}
+          loading={customerLoading}
         />
       </FlexBox>
     </form>

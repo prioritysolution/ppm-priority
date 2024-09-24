@@ -456,11 +456,7 @@ export const MeterReadingHooks = () => {
         )
         .test(
           "is-greater-than-amount-to-be-paid",
-          `Amount must be less than or equal to ${
-            Number(Math.floor(grandTotal)) -
-            Number(bankTransactionTotal) -
-            Number(cashTransactionGrandTotal)
-          }`,
+          `Total amount must be less than or equal to ${Number(grandTotal)}`,
           (value) =>
             value <=
             Number(Math.floor(grandTotal)) -
@@ -472,7 +468,6 @@ export const MeterReadingHooks = () => {
       const cardPos = cardPosOptions?.filter(
         (data: any) => data.value === values.cardPos
       )[0]?.name;
-      console.log(cardPos);
       setBankTransactionData((prev: any) => [
         ...prev,
         {
@@ -490,14 +485,31 @@ export const MeterReadingHooks = () => {
   const handleResetForm = () => {
     addMeterReadingFormik.resetForm();
     addGSTFormik.resetForm();
-    setReadingDate(null);
-    setReadingDateError(null);
+    addInfoForm.resetForm();
+    transactionBankingForm.resetForm();
+
     setOpenAddInfoForm(false);
     setMeterReading([]);
     setGstTable([]);
-    setErrMessage("");
     setIsDisabled(false);
+    setFinalAmountDiff(0);
+    getNoteDenomApiCall();
+    setIsTransactionValid(true);
+    setGstGrandTotal(0);
+    setActiveSteps(0);
+    setCashTransactionGrandTotal(0);
+    setGrandTotal(0);
+    setDecimal(0);
+    setDecimalInput(0);
+    setDecimalInputError("");
+    setCashDenomArray([]);
+    setBankTransactionData([]);
+    setBankTransactionTotal(0);
+    setMeterReadingGrandTotal(0);
+    setReadingDate(null);
+    setReadingDateError(null);
     setErrMessage("");
+    setCalculateCheck(false);
   };
 
   // delete meter reading data function
@@ -682,7 +694,7 @@ export const MeterReadingHooks = () => {
 
     const decimalPart = decimalTobePaid.toString().includes(".")
       ? Number(grandTotal.toString().split(".")[1]) /
-        (grandTotal.toString().split(".")[1].length * 10)
+        10 ** grandTotal.toString().split(".")[1].length
       : 0;
 
     setDecimal(parseFloat(decimalPart.toFixed(2)));
@@ -814,6 +826,7 @@ export const MeterReadingHooks = () => {
         // console.log(res)
         if (res.status === 200) {
           toast.success(res.message);
+          handleResetForm();
         } else {
           toast.error(res.message);
         }
@@ -826,28 +839,6 @@ export const MeterReadingHooks = () => {
       .finally(() => {
         setPostFinalLoaders(false);
       });
-
-    console.log("data", bodyData);
-
-    setFinalAmountDiff(0);
-    getNoteDenomApiCall();
-    setIsTransactionValid(true);
-    setGstGrandTotal(0);
-    setActiveSteps(0);
-    handleResetForm();
-    setCashTransactionGrandTotal(0);
-    setGrandTotal(0);
-    setDecimal(0);
-    setDecimalInput(0);
-    setDecimalInputError("");
-    setCashDenomArray([]);
-    setBankTransactionData([]);
-    setBankTransactionTotal(0);
-    setMeterReadingGrandTotal(0);
-    setReadingDate(null);
-    setReadingDateError(null);
-    setErrMessage("");
-    setCalculateCheck(false);
   };
 
   return {
@@ -903,5 +894,6 @@ export const MeterReadingHooks = () => {
     finalAmountDiff,
     handleCalculateCheck,
     calculateCheck,
+    postFinalLoaders,
   };
 };

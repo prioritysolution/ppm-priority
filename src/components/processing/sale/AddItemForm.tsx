@@ -11,12 +11,14 @@ import text from "@/languages/en_US.json";
 interface AddItemFormProps {
   formik: any;
   itemOptions: any;
+  showPetroliumModal: boolean;
   //   loading: boolean;
 }
 
 const AddItemForm: FC<AddItemFormProps> = ({
   formik,
   itemOptions,
+  showPetroliumModal,
   //   loading,
 }) => {
   return (
@@ -35,6 +37,7 @@ const AddItemForm: FC<AddItemFormProps> = ({
             error={formik?.touched?.item && Boolean(formik?.errors?.item)}
             errorText={formik?.touched?.item && formik?.errors?.item}
             fullWidthState
+            // disabled={showPetroliumModal}
           />
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
@@ -66,6 +69,7 @@ const AddItemForm: FC<AddItemFormProps> = ({
             }
             clickEnter={formik?.handleSubmit}
             fullwidthState
+            // disabled={showPetroliumModal}
           />
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
@@ -94,6 +98,7 @@ const AddItemForm: FC<AddItemFormProps> = ({
             helperText={formik?.touched?.itemRate && formik?.errors?.itemRate}
             // clickEnter={formik?.handleSubmit}
             fullwidthState
+            // disabled={showPetroliumModal}
           />
         </Grid>
         <FlexBox className="w-full justify-end">

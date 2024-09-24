@@ -156,7 +156,7 @@
       }
     },
     "sale": {
-      "readDate": "Reading date",
+      "saleDate": "Sale date",
       "soldBy": "Sold by",
       "soldTo": "Sold to",
       "paymentMethod": "Select Payment method",
@@ -172,6 +172,14 @@
       },
       "transactionCash": {
         "denominator": "Denominator"
+      },
+      "petrolium": {
+        "selectItem": "Item",
+        "itemRate": "Item Rate",
+        "selectPump": "Pump",
+        "selectNozzle": "Nozzle",
+        "itemQnty": "Item quantity",
+        "formHeading": "Add Petrolium Item Details"
       }
     },
     "purchase": {
@@ -326,6 +334,13 @@
       },
       "transactionCash": {
         "denominator": "Enter denominator"
+      },
+      "petrolium": {
+        "selectItem": "Select Item",
+        "itemRate": "Item Rate",
+        "selectPump": "Select Pump",
+        "selectNozzle": "Select Nozzle",
+        "itemQnty": "Enter item quantity"
       }
     },
     "purchase": {
@@ -608,6 +623,12 @@
         "transactionBanking": {
           "amount": "Please enter amount",
           "cardPos": "Please select card/Pos"
+        },
+        "petrolium": {
+          "item": "Please select item",
+          "pump": "Please select a pump",
+          "nozzle": "Please select a nozzle",
+          "itemQnty": "Enter item quantity"
         }
       },
       "purchase": {
@@ -746,7 +767,8 @@
     "update": "Update",
     "yes": "Yes",
     "no": "No",
-    "continue": "Continue"
+    "continue": "Continue",
+    "next": "Next"
   },
   "noContentPage": "No Content found",
   "confirmationDialogues": {

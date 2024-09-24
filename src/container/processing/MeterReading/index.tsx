@@ -49,7 +49,6 @@ const MeterReadingContainer = () => {
     isTransactionValid,
     bankTransactionData,
     transactionBankingForm,
-    calculateBankTransactionTotal,
     bankTransactionTotal,
     handleTransactionPost,
     handleDeleteBankTransactionData,
@@ -60,9 +59,9 @@ const MeterReadingContainer = () => {
     handleCalculateDecimalChange,
     decimalInputError,
     finalAmountDiff,
-    setFinalAmountDiff,
     handleCalculateCheck,
     calculateCheck,
+    postFinalLoaders,
   } = MeterReadingHooks();
 
   const { getShiftApiCall } = ShiftMasterHooks();
@@ -147,7 +146,6 @@ const MeterReadingContainer = () => {
       bankTransactionTotal={bankTransactionTotal}
       setActiveSteps={setActiveSteps}
       finalAmountDiff={finalAmountDiff}
-      setFinalAmountDiff={setFinalAmountDiff}
       grandTotal={grandTotal}
       decimal={decimal}
       decimalInput={decimalInput}
@@ -155,6 +153,7 @@ const MeterReadingContainer = () => {
       decimalInputError={decimalInputError}
       handleCalculateCheck={handleCalculateCheck}
       calculateCheck={calculateCheck}
+      postFinalLoaders={postFinalLoaders}
     />
   );
 };
