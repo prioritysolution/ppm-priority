@@ -1,12 +1,7 @@
 import {
   Box,
   Collapse,
-  Container,
-  Dialog,
-  DialogTitle,
-  Divider,
   Grid,
-  IconButton,
   List,
   ListItemButton,
   ListItemText,
@@ -20,12 +15,7 @@ import { FC } from "react";
 import { useSelector } from "react-redux";
 
 import AddItemForm from "../sale/AddItemForm";
-import {
-  ButtonFieldInput,
-  FlexBox,
-  FlexContentCenter,
-  RadioGroupField,
-} from "@/common";
+import { ButtonFieldInput, FlexBox, RadioGroupField } from "@/common";
 import CustomerDetailsForm from "../sale/CustomerDetailsForm";
 import AddItemTable from "../sale/AddItemTable";
 import PaymentMethodForm from "../sale/PaymentMethodForm";
