@@ -237,11 +237,11 @@ const Purchase: FC<PurchaseProps> = ({
                   unmountOnExit
                   className="p-5 shadow"
                 >
-                  <AddItemForm
+                  {/* <AddItemForm
                     formik={addItemFormik}
                     itemOptions={itemOptions}
                     // loading={addInfoLoader}
-                  />
+                  /> */}
                 </Collapse>
               </List>
             </Grid>
@@ -339,7 +339,7 @@ const Purchase: FC<PurchaseProps> = ({
           {showPaymentModal && (
             <Box>
               <Box className="space-y-5 border p-5 border-green-400 rounded-md">
-                <PaymentMethodForm
+                {/* <PaymentMethodForm
                   paymentOption={paymentOption}
                   cardPosOptions={cardPosOptions}
                   formik={transactionBankingForm}
@@ -354,7 +354,7 @@ const Purchase: FC<PurchaseProps> = ({
                   cashOutTransactionGrandTotal={cashOutTransactionGrandTotal}
                   grandTotal={itemTableGrandTotal}
                   handleCashTransactionPost={handleCashTransactionPost}
-                />
+                /> */}
               </Box>
             </Box>
           )}
